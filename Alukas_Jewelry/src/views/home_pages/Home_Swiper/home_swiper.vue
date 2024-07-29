@@ -1,5 +1,5 @@
 <template>
-  <div class="px-3 py-2">
+  <div class="px-3 py-2 bg-emerald-800  ">
       <swiper
     :modules="modules"
     :slides-per-view="1"
@@ -7,14 +7,14 @@
     :scrollbar="{ draggable: true }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
-    class="min-h-[40vh] max-w-[50rem]"
+    class="min-h-[40vh] max-w-[50rem] "
   > 
     <swiper-slide class="releative">
-        <img :src="atwo" alt="" class="w-[500px] h-[500px] object-cover" >
+        <img :src="atwo" alt="" class="w-[500px] h-[500px] lg:w-full lg:h-[60vh] object-cover" >
         <p class="absolute top-0 left-0 p-1 bg-black text-white" ref="nigger">Some Random Item ...</p>
     </swiper-slide>
     <swiper-slide class="releative">
-        <img :src="atwo2" alt="" class="w-[500px] h-[500px] object-cover" >
+        <img :src="atwo2" alt="" class="w-[500px] h-[500px] lg:w-full lg:h-[60vh] object-cover" >
         <p class="absolute top-0 left-0 p-1 bg-black text-white" ref="nigger">Some Random Item ...</p>
     </swiper-slide>
   </swiper>
@@ -34,18 +34,18 @@ const screenWidth = ref(window.innerWidth)
   // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
-const nigger=ref('')
-      const onSwiper = (swiper) => {
-        nigger.value.classList.add('bg-red-800', 'p-5','bounce');
-      };
-      const onSlideChange = () => {
+// const nigger=ref('')
+//       const onSwiper = (swiper) => {
+//         nigger.value.classList.add('bg-red-800', 'p-5','bounce');
+//       };
+//       const onSlideChange = () => {
 
-          nigger.value.classList.add('bg-red-800', 'p-5', 'bounce');
-  setTimeout(() => {
-    nigger.value.classList.remove('bounce');
-  },100); // remove bounce class after 1 second
+//           nigger.value.classList.add('bg-red-800', 'p-5', 'bounce');
+//   setTimeout(() => {
+//     nigger.value.classList.remove('bounce');
+//   },100); // remove bounce class after 1 second
 
-      };
+//       };
 </script>
 <style scoped>
 @keyframes bounce {
