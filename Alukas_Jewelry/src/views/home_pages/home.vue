@@ -10,7 +10,7 @@ import Home_gridShowCase from "./Home_Swiper/home_grid_showcase.vue";
 </script>
 <template>
 <div class="size-of-screen">
-                <div class="fixed bottom-16 right-8 bg-green-800 p-3 rounded-full text-2xl border-4 border-white text-white">
+                <div class="fixed bottom-16 right-8 bg-green-800 p-3 rounded-full text-2xl border-4 border-white text-white z-[1000]">
             <p class="sm:hidden ">Tony</p>
             <p class="hidden sm:block md:hidden">Small</p>
             <p class="hidden md:block lg:hidden ">Medium</p>

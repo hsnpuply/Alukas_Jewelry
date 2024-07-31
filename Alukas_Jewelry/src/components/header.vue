@@ -1,9 +1,9 @@
 <template>
-  <header >
+  <header class=" border-b-1 border-black" >
 
     <MobileMenu ref="myMobileMenu" toggleNav="mobileNav_activator"  />
     <!--:class="mobileNav_activator ? 'translate-x-[0%]' : '' "  -->
-    <div class="px-3 bg-blue-400 flex items-center py-4  justify-between w-full ">
+    <div class="px-3 flex items-center py-4  justify-between w-full bg-emerald-100">
         <div class="flex gap-3">
         <Icon icon="material-symbols-light:menu"  class="text-4xl cursor-pointer" @click="openMobileNav()" />
         <Icon icon="mdi-light:magnify" class="text-4xl" />

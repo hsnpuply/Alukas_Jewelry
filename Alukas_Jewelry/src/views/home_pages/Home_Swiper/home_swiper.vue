@@ -1,5 +1,5 @@
 <template>
-  <div class="px-3 py-2 bg-emerald-800  ">
+  <div class="px-3 py-2  ">
       <swiper
     :modules="modules"
     :slides-per-view="1"
