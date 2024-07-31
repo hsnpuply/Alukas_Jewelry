@@ -4,7 +4,8 @@ import Footer_home from '../../components/footer.vue';
 import { ref } from 'vue';
 import { RouterView } from 'vue-router';
 import Home_swiper from "./Home_Swiper/home_swiper.vue";
-import Home_gridShowCase from "./Home_Swiper/home_grid_showcase.vue";
+import Home_gridShowCase from "./home_grid_Showcase/home_grid_showcase.vue";
+import Home_featureProdcuts from "./home_feature_prodcuts/home_featured_products.vue";
 
 
 </script>
@@ -24,6 +25,7 @@ import Home_gridShowCase from "./Home_Swiper/home_grid_showcase.vue";
     <RouterView>
         <Home_swiper/>
         <Home_gridShowCase/>
+        <Home_featureProdcuts/>
         
     </RouterView>
 

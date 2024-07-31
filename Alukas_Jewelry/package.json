@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.1",
     "pinia": "^2.1.7",
     "swiper": "^11.1.8",
     "vue": "^3.4.29",
