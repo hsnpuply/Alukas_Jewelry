@@ -32,7 +32,7 @@
   @apply w-0 -translate-x-[101%] ;
   transition: all 0.4s 0.2s ease-out, transform 1s 0.4s ease-out;
 }
-.shop_now:hover::before{
+.shop_now:hover::before:hover{
   transition: all .8s   ease-out, transform .6s .7s ease-out;
 }
 
@@ -51,6 +51,7 @@
 
 
 } 
+
 
 
 }

@@ -1,7 +1,5 @@
 {
     "feature_products": [
-
-        
         {
             "id": 1,
             "pic": "../src/assets/featured_products/new_arrivals/product-1.webp",
@@ -107,11 +105,7 @@
             "id": 20,
             "pic": "../src/assets/featured_products/new_arrivals/back_product-5.webp",
             "type": "back_product"
-        },
-
-
-
-        
+        },      
         {
             "id": 21,
             "pic": "../src/assets/featured_products/featured/product-1.webp",
