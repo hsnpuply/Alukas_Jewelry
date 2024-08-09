@@ -50,9 +50,16 @@
             before:group-hover:ease-out
 
 
+            
 } 
 
-
+/* Featured Products */
+.appearList{
+  @apply opacity-100 duration-500 translate-y-0 
+}
+.disappearList{
+  @apply opacity-0 duration-500 translate-y-10 hidden
+}
 
 }
 

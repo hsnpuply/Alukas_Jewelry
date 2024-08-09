@@ -1,6 +1,6 @@
 <template>
   <section class="feature_products_section  py-12">
-    <div class="feature_products pt-4 ">
+    <div class="feature_products pt-4 relative">
       <h2 class="text-4xl text-black text-center">Feature Products</h2>
       <div class=" options-button flex items-center gap-8 justify-center py-5 ">
  <button
@@ -27,7 +27,9 @@
       </div>
 
 
-      <div class="new_arrivals_products flex items-center justify-center bg-red-700">
+      <div class="new_arrivals_products flex items-center justify-center bg-red-700  bg-green-700 absolute w-full top-[7.6rem]" 
+      :class="selectedButton === 'new-arrivals' ? 'appearList' : 'disappearList'"
+      >
       <swiper
     :modules="modules"
     :slides-per-view="2"
@@ -44,10 +46,57 @@
   </swiper>
 
       </div>
-      <div class="feautred_products hidden"></div>
-      <div class="best_seller_products hidden"></div>
+      
+      <div class="feautred_products flex items-center justify-center bg-green-700 absolute w-full top-[7.6rem]"
+            :class="selectedButton === 'featured' ? 'appearList' : 'disappearList'" >
+            <swiper
+    :modules="modules"
+    :slides-per-view="2"
+    :space-between="50"
+    :scrollbar="{ draggable: true }"
+    class="cursor-pointer container"
+  > 
+    <swiper-slide class="releative">
+      <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="">
+       
+    </swiper-slide>
+        <swiper-slide class="releative">
+      <img src="../../../assets/featured_products/best_seller/product-4.webp" alt="">
+       
+    </swiper-slide>
+
+
+  </swiper>
+      </div>
+      
+      <div class="best_seller_products  bg-violet-700 absolute w-full top-[7.6rem]"
+     :class="selectedButton === 'best-seller' ? 'appearList' : 'disappearList'"
+
+      >
+                    <swiper
+    :modules="modules"
+    :slides-per-view="2"
+    :space-between="50"
+    :scrollbar="{ draggable: true }"
+    class="cursor-pointer container"
+  > 
+    <swiper-slide class="releative">
+      <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="">
+       
+    </swiper-slide>
+        <swiper-slide class="releative">
+      <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="">
+       
+    </swiper-slide>
+
+
+
+  </swiper>
+      </div>
     </div>
+
   </section>
+
 </template>
 
 <script setup>
@@ -124,7 +173,6 @@ const selectedButton = ref('new-arrivals');
 .unSelected-product:hover::after{
   width: 100%;
 }
-
 
 
 </style>
