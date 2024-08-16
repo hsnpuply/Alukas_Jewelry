@@ -10,8 +10,8 @@
                 <Icon icon="gridicons:cross" width="28" height="28" />
                </button>
             </div>
-            <ul v-for="(item,index) in menuMobile" :key="index" class="ul_mobile_nav  py-2 container flex items-start  text-xl flex-col gap-10">
-              <li >{{ item }}</li>
+            <ul  class="ul_mobile_nav group  py-2 container flex items-start  text-xl flex-col gap-6">
+              <li v-for="(item,index) in menuMobile" :key="index" class="hover:bg-red-700 ">{{ item }}</li>
             </ul>
         </nav>
     </aside>

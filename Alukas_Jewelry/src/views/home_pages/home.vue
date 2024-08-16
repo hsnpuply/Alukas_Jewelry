@@ -28,7 +28,7 @@ import Home_featureProdcuts from "./home_feature_prodcuts/home_featured_products
         <Home_featureProdcuts/>
         
     </RouterView>
-
+    <!-- <div class="h-[40vh] w-full bg-green-600"></div> -->
     </main>
     <Footer_home/>
 
