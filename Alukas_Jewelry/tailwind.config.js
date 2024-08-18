@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
   content: [
     "./index.html",
@@ -12,7 +11,8 @@ export default {
         center: true,
         padding:'2rem'
       },
-    
+      backgroundImage: {
+      }
     },
   },
   plugins: [],

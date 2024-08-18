@@ -1,5 +1,5 @@
 <template>
-  <section class="feature_products_section  py-12">
+  <section class="feature_products_section  py-12 h-[82vh]">
     <div class="feature_products pt-4 relative">
       <h2 class="text-4xl text-black text-center">Feature Products</h2>
       <div class=" options-button flex items-center gap-8 justify-center py-5 ">

@@ -1,11 +1,12 @@
 <script setup>
 import Header_home from '../../components/header.vue';
 import Footer_home from '../../components/footer.vue';
-import { ref } from 'vue';
 import { RouterView } from 'vue-router';
 import Home_swiper from "./Home_Swiper/home_swiper.vue";
 import Home_gridShowCase from "./home_grid_Showcase/home_grid_showcase.vue";
 import Home_featureProdcuts from "./home_feature_prodcuts/home_featured_products.vue";
+import Home_banner from './home_banner/home_banner.vue';
+import Home_journal from './home_journal/home_journal.vue';
 
 
 </script>
@@ -26,6 +27,8 @@ import Home_featureProdcuts from "./home_feature_prodcuts/home_featured_products
         <Home_swiper/>
         <Home_gridShowCase/>
         <Home_featureProdcuts/>
+        <Home_banner/>
+        <Home_journal/>
         
     </RouterView>
     <!-- <div class="h-[40vh] w-full bg-green-600"></div> -->
