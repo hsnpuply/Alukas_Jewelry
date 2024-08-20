@@ -7,6 +7,7 @@ import Home_gridShowCase from "./home_grid_Showcase/home_grid_showcase.vue";
 import Home_featureProdcuts from "./home_feature_prodcuts/home_featured_products.vue";
 import Home_banner from './home_banner/home_banner.vue';
 import Home_journal from './home_journal/home_journal.vue';
+import Home_testimonial_customers from './home_testimonial_customers/home_testimonial_customers.vue';
 
 
 </script>
@@ -29,6 +30,7 @@ import Home_journal from './home_journal/home_journal.vue';
         <Home_featureProdcuts/>
         <Home_banner/>
         <Home_journal/>
+        <Home_testimonial_customers/>
         
     </RouterView>
     <!-- <div class="h-[40vh] w-full bg-green-600"></div> -->
