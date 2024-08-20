@@ -28,19 +28,19 @@
   }
 
   /* Grid Show Cases */
-.shop_now:hover::after {
+.shop_now:hover::after,.blog_button:hover::after {
   @apply w-0 -translate-x-[101%] ;
   transition: all 0.4s 0.2s ease-out, transform 1s 0.4s ease-out;
 }
-.shop_now:hover::before:hover{
+.shop_now:hover::before,.blog_button:hover::before {
   transition: all .8s   ease-out, transform .6s .7s ease-out;
 }
 
- .shop_now:hover::before {
+ .shop_now:hover::before,.blog_button:hover::before {
   @apply transition-transform duration-[600ms] delay-700 ease-out ;
 }
 
-.shop_now{
+.shop_now,.blog_button{
   @apply    after:group-hover:-translate-x-[101%] after:group-hover:w-0
             after:group-hover:transition-all after:group-hover:duration-[400ms]
             after:group-hover:delay-200 after:group-hover:ease-out

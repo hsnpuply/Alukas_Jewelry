@@ -1,24 +1,86 @@
 <template>
-  <section class="home_journal-section  bg-green-700  container px-0" >
-    <div class="journal_title text-center">
-      <h2 class="text-4xl text-black text-center">Feature Products</h2>
+  <section class="home_journal-section    container px-0 mb-8" >
+    <div class="journal_title text-center pb-8 pt-4">
+      <h2 class="text-[40px]  mb-2 text-black text-center">Read Journal</h2>
+        <h3 class="text-[#555555] text-[20px]">Latest trends and inspirations in fashion design.</h3>
     </div>
-    <div class="home_journal-section__content flex items-center justify-start gap-8 ">
-        <div class="journal_item-1 ml-0 pl-0 bg-violet-800">
-            <div class="img-journal  bg-red-500 w-full ">
-                <img src="../../../assets/2_84c973d9-47c0-484c-9962-7b6e95370227.webp" alt="image" class="w-[600px] h-[400px]">
+    <div class="home_journal-section__content flex items-start justify-start gap-7 ">
+        <div class="journal_item-1 flex flex-col justify-center gap-6">
+
+            <div class="img-blog cursor-pointer  w-full overflow-hidden relative">
+                <img src="../../../assets/journal/Journal_1.webp" alt="image" class="w-[750px] h-[300px] hover:scale-110 duration-300">
+                <span class=" text-white bg-[#222222] px-2 py-1 uppercase absolute top-4 left-4 text-sm">
+                    Accessories
+                </span>
+            </div>
+
+            <div class="blog-info text-center">
+                <div class="author text-[15.5px] ">
+                    <span class="my-axe uppercase">Post by <span class="font-medium">Alukas Shopify</span></span>
+                    <span class="breaker "> - </span> <span class="date-blog text-[#757575] uppercase">
+              Mar 06 2024
+            </span>
+                </div>
+                <div class="blog-title py-2">
+                    <h3 class="text-[28px] font-base font-[500]">Selective Styles Help your look</h3>
+                </div>
+                <button class=" blog_button relative overflow-hidden text-lg group">Continue Reading</button>
             </div>
         </div>
-        <div class="journal_item-1">
-            <div class="img-journal">
-                <img src="../../../assets/2_84c973d9-47c0-484c-9962-7b6e95370227.webp" alt="image" class="w-[600px] h-[400px]">
+
+
+
+
+
+        <div class="journal_item-1 flex flex-col justify-center gap-6">
+
+            <div class="img-blog cursor-pointer  w-full overflow-hidden relative">
+                <img src="../../../assets/journal/Journal_2.webp" alt="image" class="w-[750px] h-[300px] hover:scale-110 duration-300">
+                <span class=" text-white bg-[#222222] px-2 py-1 uppercase absolute top-4 left-4 text-sm">
+                    Accessories
+                </span>
+            </div>
+
+            <div class="blog-info text-center">
+                <div class="author text-[15.5px] ">
+                    <span class="my-axe uppercase">Post by <span class="font-medium">Alukas Shopify</span></span>
+                    <span class="breaker "> - </span> <span class="date-blog text-[#757575]  uppercase">
+              Jul 06 2024
+            </span>
+                </div>
+                <div class="blog-title py-2">
+                    <h3 class="text-[28px] font-base font-[500]">
+          How to Style a Quiff
+        </h3>
+                </div>
+                <button class=" blog_button relative overflow-hidden text-lg group">Continue Reading</button>
             </div>
         </div>
-        <div class="journal_item-1">
-            <div class="img-journal">
-                <img src="../../../assets/2_84c973d9-47c0-484c-9962-7b6e95370227.webp" alt="image" class="w-[600px] h-[400px]">
+
+
+                <div class="journal_item-1 flex flex-col justify-center gap-6">
+
+            <div class="img-blog  w-full cursor-pointer overflow-hidden relative">
+                <img src="../../../assets/journal/Journal_3.webp" alt="image" class="w-[750px] h-[300px] hover:scale-110 duration-300">
+                <span class=" text-white bg-[#222222] px-2 py-1 uppercase absolute top-4 left-4 text-sm">
+                    Accessories
+                </span>
+            </div>
+
+            <div class="blog-info text-center">
+                <div class="author text-[15.5px] ">
+                    <span class="my-axe uppercase">Post by <span class="font-medium">Alukas Shopify</span></span>
+                    <span class="breaker "> - </span> <span class="date-blog text-[#757575] uppercase">
+              Jun 06 2024
+            </span>
+                </div>
+                <div class="blog-title py-2">
+                    <h3 class="text-[28px] font-base font-[500]">Christmas Gift Guide</h3>
+                </div>
+                <button class="blog_button relative overflow-hidden text-lg group">Continue Reading</button>
             </div>
         </div>
+
 
     </div>
   </section>
@@ -27,3 +89,47 @@
 <script setup>
 
 </script>
+
+<style scoped>
+.blog_button::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transition: all .5s .2s ease-out, transform 1s .2s ease-out;
+
+}
+
+
+.blog_button::before{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transition: all .2s .4s  ease-out, transform .6s  ease-out;
+  transform: translateX(101%);
+
+}
+.blog_button:hover::after{
+    transform: translateX(-100%);
+    width: 0;
+    transition: all .4s .2s ease-out;
+}
+
+.blog_button:hover::before{
+    transform: translateX(0);
+    transition: all .8s .4s ease-out;
+}
+
+
+
+
+ 
+
+</style>
