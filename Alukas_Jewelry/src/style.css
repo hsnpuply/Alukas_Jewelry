@@ -40,7 +40,7 @@
   @apply transition-transform duration-[600ms] delay-700 ease-out ;
 }
 
-.shop_now,.blog_button{
+.shop_now{
   @apply    after:group-hover:-translate-x-[101%] after:group-hover:w-0
             after:group-hover:transition-all after:group-hover:duration-[400ms]
             after:group-hover:delay-200 after:group-hover:ease-out
@@ -48,14 +48,20 @@
             before:group-hover:w-full before:group-hover:translate-x-0
             before:group-hover:duration-[800ms] before:group-hover:delay-[400ms]
             before:group-hover:ease-out
-
-
-            
+     
 } 
+.blog_button{
+  @apply
+                  after:group-hover:-translate-x-full after:group-hover:duration-[400ms]
+                after:group-hover:delay-[200ms] after:group-hover:ease-out
+
+                before:group-hover:translate-x-0 before:group-hover:duration-[800ms]
+                before:group-hover:delay-[400ms] before:group-hover:ease-out
+}
 
 /* Featured Products */
 .appearList{
-  @apply opacity-100 duration-500 translate-y-0 
+  @apply opacity-100 duration-500 translate-y-0 visible
 }
 .disappearList{
   @apply opacity-0 duration-500 translate-y-10 hidden

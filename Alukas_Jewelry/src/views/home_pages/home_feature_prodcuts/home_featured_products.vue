@@ -1,5 +1,5 @@
 <template>
-  <section class="feature_products_section  py-12 h-[82vh]">
+  <section class="feature_products_section   overflow-hidden pb-24 pt-16">
     <div class="feature_products pt-4 relative">
       <h2 class="text-4xl text-black text-center">Feature Products</h2>
       <div class=" options-button flex items-center gap-8 justify-center py-5 ">
@@ -25,137 +25,39 @@
           Best Seller
         </button>
       </div>
+      <div class="featured_product_container relative overflow-hidden  h-[60vh] ">
+        
 
 
-
-
-
-
-
-
-            <div class="featured_products flex items-center justify-center
-       bg-violet-7002 absolute w-full top-[7.6rem] "  
-     :class="selectedButton === 'featured' ? 'appearList' : 'disappearList'"
+      <div class="featured_products flex items-center justify-center
+       bg-violet-7002  absolute w-full top-0
+       
+       "  
+     :class="selectedButton === 'featured' ? 'appearList' : 'disappearList' + ' down'"
 
       >
                     <swiper
     :modules="modules"
     :slides-per-view="4"
     :space-between="50"
-    :scrollbar="{ draggable: true }"
-    class="cursor-pointer container bg-red-800"
+    class="cursor-pointer container bg-yellow-800"
   > 
-    <swiper-slide class="releative ">
-      <div class="product-frame bg-violet-600 p-2 hover:bg-white  group relative">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/featured/product-1.webp"
-         alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-4.webp"
-         alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
 
-        <div class="info-product py-4   bg-violet-200  w-full  mb-8  group-hover:pb-16 absolute
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki11111111111
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet 
-          </h3>
 
-          <p class="text-lg">$169.00</p>  
-            <div class="add-to-wishlist ">
-              <button class="bg-black text-white p-3  
-          rounded-sm w-[130px] mt-2 duration-500">Random add to</button>
-        </div>    
-        </div>
 
-   
-      </div>
-       
-    </swiper-slide>
-       <swiper-slide class="releative">
-      <div class="product-frame bg-violet-200 p-3 hover:bg-white overflow-hidden group">
+
+     <swiper-slide class="releative">
+      <div class="product-frame  p-3 hover:bg-white overflow-hidden group">
         <div class="image-frame relative">
         <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
         <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
         ">
+                <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
+            <Icon icon="mdi-light:magnify" class="text-3xl  " />
         </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki11111111111
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
+        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
+        <Icon :icon="toggleHeart" class="text-3xl" @click="toggleMyHeart()" />
         </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700  absolute top-0 left-0 -hue-rotate-60
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-4.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-4.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] uppercase ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
         </div>
 
         <div class="info-product py-4  bg-white
@@ -180,129 +82,33 @@
   </swiper>
       </div>
 
-                  <div class="new_arrivals_products flex items-center justify-center
-       bg-violet-7002 absolute w-full top-[7.6rem] "  
+      <div class="new_arrivals_products flex items-center justify-center
+       bg-violet-7002  absolute w-full top-0  "  
+       
      :class="selectedButton === 'new-arrivals' ? 'appearList' : 'disappearList'"
 
       >
+      <!-- absolute w-full top-[7.6rem] -->
                     <swiper
     :modules="modules"
     :slides-per-view="4"
     :space-between="50"
-    :scrollbar="{ draggable: true }"
-    class="cursor-pointer container bg-red-800"
+    class="cursor-pointer container "
   > 
-    <swiper-slide class="releative   ">
-      <div class="product-frame   p-2 hover:bg-white group   relative">
-        <div class="image-frame p-4  relative">
-        <img src="../../../assets/featured_products/best_seller/product-1.webp"
-         alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-1.webp"
-         alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
 
-        <div class="info-product py-4     w-full    group-hover:pb-16 absolute
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki dasta bil
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>  
-            <div class="add-to-wishlist ">
-              <button class="bg-black text-white p-3  
-          rounded-sm w-[130px] mt-2 duration-500">Random add to</button>
-        </div>    
-        </div>
-
-   
-      </div>
-       
-    </swiper-slide>
-       <swiper-slide class="releative group/hasan">
-      <div class="product-frame bg-gray-600 p-3 hover:bg-white    ">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover/hasan:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover/hasan:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki hoh Q
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover/hasan:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
      <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
+      <div class="product-frame  p-3 hover:bg-white overflow-hidden group">
         <div class="image-frame relative">
+
         <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700  absolute top-0 left-0 -hue-rotate-60
-        ">
+        <img src="../../../assets/featured_products/best_seller/back_product-4.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0  ">
+        <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
+            <Icon icon="mdi-light:magnify" class="text-3xl  " />
+        </div>
+        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
+        <Icon :icon="toggleHeart" class="text-3xl" @click="toggleMyHeart()" />
         </div>
 
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-4.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-4.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] uppercase ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
         </div>
 
         <div class="info-product py-4  bg-white
@@ -327,153 +133,16 @@
   </swiper>
       </div>
 
-                  <div class="featured_products flex items-center justify-center
-       bg-violet-7002 absolute w-full top-[7.6rem] "  
-     :class="selectedButton === 'featured' ? 'appearList' : 'disappearList'"
-
-      >
-                    <swiper
-    :modules="modules"
-    :slides-per-view="4"
-    :space-between="50"
-    :scrollbar="{ draggable: true }"
-    class="cursor-pointer container bg-red-800"
-  > 
-    <swiper-slide class="releative ">
-      <div class="product-frame bg-violet-600 p-2 hover:bg-white  group relative">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-1.webp"
-         alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-1.webp"
-         alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
-
-        <div class="info-product py-4   bg-violet-200  w-full  mb-8  group-hover:pb-16 absolute
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki1212q
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>  
-            <div class="add-to-wishlist ">
-              <button class="bg-black text-white p-3  
-          rounded-sm w-[130px] mt-2 duration-500">Random add to</button>
-        </div>    
-        </div>
-
-   
-      </div>
-       
-    </swiper-slide>
-       <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700  absolute top-0 left-0 -hue-rotate-60
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-4.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-4.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] uppercase ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-     <swiper-slide class="releative">
-      <div class="product-frame bg-violet-600 p-3 hover:bg-white overflow-hidden group">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-
-
-  </swiper>
-      </div>
       
+      </div>
+
+
+
+
+
+
+
+
 
     </div>
 
@@ -482,6 +151,12 @@
 </template>
 
 <script setup>
+
+const toggleHeart = ref('ion:heart-outline')
+const toggleMyHeart = () => {
+  toggleHeart.value = toggleHeart.value === 'ion:heart-outline' ? 'ion:heart' : 'ion:heart-outline'
+}
+
 import { ref } from 'vue';
 import { useFeatureProducts } from '../../../stores/stores'
 
@@ -556,6 +231,23 @@ const selectedButton = ref('new-arrivals');
   width: 100%;
 }
 
+.down{
+  visibility: hidden;
+  opacity: 0;
+}
+
+ img {
+  pointer-events: none;
+}
+
+.new_arrivals_products, .featured_products {
+  z-index: 1; /* add z-index */
+}
+
+.appearList {
+  z-index: 22; /* increase z-index */
+  position: absolute;
+}
 
 
 
