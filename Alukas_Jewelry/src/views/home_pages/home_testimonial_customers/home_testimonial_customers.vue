@@ -1,12 +1,11 @@
 <template>
-  <section class="home-testimonial_customers w-full  my-8 ">
+  <section class="home-testimonial_customers w-full  my-24 ">
     <div class="container  w-full py-8">
 
        <swiper
     :modules="modules"
     :slides-per-view="1"
     :space-between="50"
-    :scrollbar="{ draggable: true }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     class="min-h-[40vh] max-w-[50rem]  "
