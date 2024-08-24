@@ -40,14 +40,14 @@
     :modules="modules"
     :slides-per-view="4"
     :space-between="50"
-    class="cursor-pointer container bg-yellow-800"
+    class="cursor-pointer container py-2"
   > 
 
 
 
 
-     <swiper-slide class="releative">
-      <div class="product-frame  p-3 hover:bg-white overflow-hidden group">
+     <swiper-slide class="releative group ">
+      <div class="product-frame  before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500  p-6 overflow-hidden group hover:bg-white">
         <div class="image-frame relative">
         <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
         <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
@@ -55,8 +55,40 @@
                 <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
             <Icon icon="mdi-light:magnify" class="text-3xl  " />
         </div>
-        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
-        <Icon :icon="toggleHeart" class="text-3xl" @click="toggleMyHeart()" />
+        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]"  > 
+        <Icon :icon="toggleHeart" class="text-3xl" @click="toggleMyHeart()"/>
+        </div>
+        </div>
+
+        <div class="info-product py-4  bg-white
+        flex flex-col gap-1 duration-500  ">
+          <h4 class="product-brand text-sm text-[#757575] ">
+            Hasan barati Maleki oyq
+          </h4>
+          <h3 class="text-lg"> 
+        Cross Stripes & Stone Bracelet
+          </h3>
+
+          <p class="text-lg">$169.00</p>
+          <button class="bg-black text-white p-3 
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
+          
+        </div>
+      </div>
+       
+    </swiper-slide>
+
+         <swiper-slide class="releative group">
+      <div class="product-frame  before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500 p-8  overflow-hidden group hover:bg-white">
+        <div class="image-frame relative">
+        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
+        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
+        ">
+                <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
+            <Icon icon="mdi-light:magnify" class="text-3xl  " />
+        </div>
+        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]" @click="toggleMyHeart()" > 
+        <Icon :icon="toggleHeart" class="text-3xl" />
         </div>
         </div>
 
@@ -71,7 +103,7 @@
 
           <p class="text-lg">$169.00</p>
           <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500" >Random add to q</button>
           
         </div>
       </div>
@@ -96,17 +128,18 @@
     class="cursor-pointer container "
   > 
 
-     <swiper-slide class="releative">
-      <div class="product-frame  p-3 hover:bg-white overflow-hidden group">
+     <swiper-slide class="releative group">
+
+      <div class="product-frame before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500 p-8 hover:bg-white overflow-hidden group">
         <div class="image-frame relative">
 
         <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class="group-hover:opacity-0  duration-700">
         <img src="../../../assets/featured_products/best_seller/back_product-4.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0  ">
         <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
-            <Icon icon="mdi-light:magnify" class="text-3xl  " />
+            <Icon icon="mdi-light:magnify" class="text-3xl  "  @click="k()"/>
         </div>
-        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
-        <Icon :icon="toggleHeart" class="text-3xl" @click="toggleMyHeart()" />
+        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]" @click="toggleMyHeart()" > 
+        <Icon :icon="toggleHeart" class="text-3xl"  />
         </div>
 
         </div>
@@ -122,7 +155,7 @@
 
           <p class="text-lg">$169.00</p>
           <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to ali</button>
           
         </div>
       </div>
@@ -155,7 +188,12 @@
 const toggleHeart = ref('ion:heart-outline')
 const toggleMyHeart = () => {
   toggleHeart.value = toggleHeart.value === 'ion:heart-outline' ? 'ion:heart' : 'ion:heart-outline'
+  alert('hello')
 }
+
+
+
+
 
 import { ref } from 'vue';
 import { useFeatureProducts } from '../../../stores/stores'
@@ -248,7 +286,40 @@ const selectedButton = ref('new-arrivals');
   z-index: 22; /* increase z-index */
   position: absolute;
 }
+.product-frame{
+  position: relative;
 
+}
 
+.product-frame:hover{
+    /* box-shadow: 0 0 10px #ff161672; */
+
+}
+.product-frame::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -10px;
+    top: -1px;
+    box-shadow: 0 0 10px #00000072;
+    pointer-events: none;
+    /* box-shadow: -3px -5px 46px -10px rgba(0,0,0,0.75); */
+    opacity: 0;
+    transition: all .3s ease-in-out
+}
+
+.product-frame::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -10px;
+    top: 1px;
+    box-shadow: 0 0 10px 2px #0000005d;
+    /* box-shadow: -3px -5px 46px -10px rgba(0,0,0,0.75); */
+    opacity: 0;
+    transition: all .3s ease-in-out
+}
 
 </style>
