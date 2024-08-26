@@ -1,16 +1,16 @@
 <template>
-  <div class="px-3 py-2  ">
+  <div class=" px-0 container ">
       <swiper
     :modules="modules"
     :slides-per-view="1"
     :space-between="50"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
-    class="min-h-[40vh] max-w-[80rem] "
+    class=" container  "
   > 
-    <swiper-slide class="releative">
-        <img :src="atwo" alt="" class="w-[500px] h-[500px] lg:w-full lg:h-[60vh] object-cover" >
-        <p class="absolute top-0 left-0 p-1 bg-black text-white" ref="nigger">Some Random Item ...</p>
+    <swiper-slide class="releative ">
+        <img :src="atwo" alt="" class="min-w-[1400px] h-[500px] lg:w-full lg:h-[60vh] object-cover" >
+        <p class="absolute top-0 left-0 p-1 bg-black text-white" ref="nigger">Some Random Ite1 ...</p>
     </swiper-slide>
     <swiper-slide class="releative">
         <img :src="atwo2" alt="" class="w-[500px] h-[500px] lg:w-full lg:h-[60vh] object-scale-down" >

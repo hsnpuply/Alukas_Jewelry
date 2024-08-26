@@ -1,6 +1,6 @@
 <template >
   <section class=" w-full  py-4 ">
-    <div class="grid_show-case container   text-center">
+    <div class="grid_show-case container px-0   text-center">
       <!-- item1  -->
       <div class="item1   text-white text-2xl overflow-hidden relative ">
         <a href="#" class="group">

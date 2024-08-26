@@ -190,7 +190,11 @@
 
      <swiper-slide class="releative group">
 
-      <div class="product-frame before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500 p-8 hover:bg-white overflow-hidden group">
+      <div class="product-frame 
+      before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500 p-8
+       hover:bg-white overflow-hidden 
+       group"
+      >
         <div class="image-frame relative">
 
         <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class="group-hover:opacity-0  duration-700">
