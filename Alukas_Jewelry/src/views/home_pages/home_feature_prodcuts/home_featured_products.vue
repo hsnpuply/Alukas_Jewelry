@@ -1,7 +1,34 @@
 <template>
   <section class="feature_products_section   overflow-hidden pb-24 pt-16">
+    <!-- <div class="group/hasan w-1/3" >
+            <div class="product-frame bg-gray-600 p-3 hover:bg-white    "   >
+        <div class="image-frame "  >
+        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover/hasan:opacity-0  duration-700">
+        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover/hasan:opacity-100 duration-700 absolute top-0 left-0
+        "
+        >
+        </div>
+
+        <div class="info-product py-4  
+        flex flex-col gap-1 duration-500  " 
+        >
+          <h4 class="product-brand text-sm text-[#757575] " >
+            Amo Hasan
+          </h4>
+          <h3 class="text-lg"> 
+        Cross Stripes & Stone Bracelet
+          </h3>
+
+          <p class="text-lg">$169.00</p>
+          <button class="bg-black text-white p-3 
+          cursor-pointer" >Random add to</button>
+          
+        </div>
+      </div>
+    </div> -->
     <div class="feature_products pt-4 relative">
       <h2 class="text-4xl text-black text-center">Feature Products</h2>
+      
       <div class=" options-button flex items-center gap-8 justify-center py-5 ">
  <button
           :class="{ 'seletcedProduct': selectedButton === 'new-arrivals', 'unSelected-product': selectedButton !== 'new-arrivals' }"
@@ -25,129 +52,87 @@
           Best Seller
         </button>
       </div>
-      <div class="featured_product_container relative overflow-hidden  h-[60vh] ">
+      <div class="featured_product_container w-full h-[60vh] overflow-hidden bg-blue-800 ">
         
 
 
-      <div class="featured_products flex items-center justify-center
-       bg-violet-7002  absolute w-full top-0
-       
-       "  
-     :class="selectedButton === 'featured' ? 'appearList' : 'disappearList' + ' down'"
-
-      >
-                    <swiper
-    :modules="modules"
-    :slides-per-view="4"
-    :space-between="50"
-    class="cursor-pointer container py-2"
-  > 
-
-
-
-
-     <swiper-slide class="releative group ">
-      <div class="product-frame  before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500  p-6 overflow-hidden group hover:bg-white">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-                <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
-            <Icon icon="mdi-light:magnify" class="text-3xl  " />
-        </div>
-        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]"  > 
-        <Icon :icon="toggleHeart" class="text-3xl" @click="toggleMyHeart()"/>
-        </div>
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki oyq
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-
-         <swiper-slide class="releative group">
-      <div class="product-frame  before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500 p-8  overflow-hidden group hover:bg-white">
-        <div class="image-frame relative">
-        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0
-        ">
-                <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
-            <Icon icon="mdi-light:magnify" class="text-3xl  " />
-        </div>
-        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]" @click="toggleMyHeart()" > 
-        <Icon :icon="toggleHeart" class="text-3xl" />
-        </div>
-        </div>
-
-        <div class="info-product py-4  bg-white
-        flex flex-col gap-1 duration-500  ">
-          <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki
-          </h4>
-          <h3 class="text-lg"> 
-        Cross Stripes & Stone Bracelet
-          </h3>
-
-          <p class="text-lg">$169.00</p>
-          <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500" >Random add to q</button>
-          
-        </div>
-      </div>
-       
-    </swiper-slide>
-
-
-  </swiper>
-      </div>
-
       <div class="new_arrivals_products flex items-center justify-center
-       bg-violet-7002  absolute w-full top-0  "  
-       
-     :class="selectedButton === 'new-arrivals' ? 'appearList' : 'disappearList'"
+       bg-violet-7002  absolute w-full top-[7.6rem]"  
+     :class="selectedButton === 'new-arrivals' ? 'appearList' : 'disappearList' + ' down'"
 
       >
-      <!-- absolute w-full top-[7.6rem] -->
                     <swiper
     :modules="modules"
     :slides-per-view="4"
     :space-between="50"
     class="cursor-pointer container "
   > 
+    <swiper-slide class="releative group/hasan" >
+      <div class="charchob-slider group overflow-hidden " >
+          <div class="frame_aks relative h-[340px] overflow-hidden " >
+              <img src="../../../assets/featured_products/best_seller/product-1.webp" alt="" class="
+              absolute top-0 left-0 opacity-100 group-hover:opacity-0
+                duration-500 min-w-[340px] min-h-[340px]">
+              <img src="../../../assets/featured_products/best_seller/back_product-1.webp" alt="" class="
+              absolute top-0 left-0 opacity-0  group-hover:opacity-100
+                min-w-[340px] min-h-[340px] duration-500">
+             <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
+            <Icon icon="mdi-light:magnify" class="text-3xl  " />
+        </div>
+        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]"
+         @click="toggleMyHeart()" > 
+        <Icon :icon="toggleHeart" class="text-3xl" />
+        </div>
+              
+          </div>
+        <div class="info-product pt-4 overflow-hidden max-h-[7rem] group-hover:max-h-[10rem] px-3
+          bg-white flex  flex-col justify-start
+        group-hover:-translate-y-10 duration-500  ">
+          <h4 class="product-brand text-sm text-[#757575] ">
+            Hasan barati Maleki dasta bilquid
+          </h4>
+          <h3 class="text-lg"> 
+        Cross Stripes & Stone Bracelet
+          </h3>
 
-     <swiper-slide class="releative group">
+          <p class="text-lg">$169.00</p>  
 
-      <div class="product-frame before:group-hover:opacity-100 before:duration-500 after:group-hover:opacity-100 after:duration-500 p-8 hover:bg-white overflow-hidden group">
+          
+
+                  <div class="add-to-wishlist opacity-0 group-hover:opacity-100
+                   transition-all duration-500 py-0 translate-y-24
+                   group-hover:translate-y-0 group-hover:py-2
+                   
+                      ">
+              <button class="bg-black text-white p-3  
+          rounded-sm    ">
+          Add to my WishList
+        </button>
+          
+        </div> 
+
+  
+        </div>
+ 
+      </div>
+       
+    </swiper-slide>
+
+
+        <swiper-slide class="releative group/hasan">
+      <div class="product-frame bg-gray-600 p-3 hover:bg-white    ">
         <div class="image-frame relative">
+        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover/hasan:opacity-0  duration-700">
+        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover/hasan:opacity-100 duration-700 absolute top-0 left-0
+        ">
 
-        <img src="../../../assets/featured_products/best_seller/product-3.webp" alt="" class="group-hover:opacity-0  duration-700">
-        <img src="../../../assets/featured_products/best_seller/back_product-4.webp" alt="" class=" opacity-0 group-hover:opacity-100 duration-700 absolute top-0 left-0  ">
-        <div class="search bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-4 translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]">
-            <Icon icon="mdi-light:magnify" class="text-3xl  "  @click="k()"/>
-        </div>
-        <div class="wishlist bg-gray-400 !bg-white rounded-full p-2 absolute right-3 top-[4.5rem] translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]" @click="toggleMyHeart()" > 
-        <Icon :icon="toggleHeart" class="text-3xl"  />
-        </div>
-
+        
         </div>
 
         <div class="info-product py-4  bg-white
         flex flex-col gap-1 duration-500  ">
           <h4 class="product-brand text-sm text-[#757575] ">
-            Hasan barati Maleki
+            Hasan barati Maleki hoh Q
           </h4>
           <h3 class="text-lg"> 
         Cross Stripes & Stone Bracelet
@@ -155,7 +140,141 @@
 
           <p class="text-lg">$169.00</p>
           <button class="bg-black text-white p-3 
-          rounded-sm w-[130px] mt-2 opacity-0 group-hover:opacity-100 duration-500">Random add to ali</button>
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover/hasan:opacity-100 duration-500 ">Random add to</button>
+          
+        </div>
+      </div>
+       
+    </swiper-slide>
+
+
+        <swiper-slide class="releative group/hasan">
+      <div class="product-frame bg-gray-600 p-3 hover:bg-white    ">
+        <div class="image-frame relative">
+        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover/hasan:opacity-0  duration-700">
+        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover/hasan:opacity-100 duration-700 absolute top-0 left-0
+        ">
+
+        
+        </div>
+
+        <div class="info-product py-4  bg-white
+        flex flex-col gap-1 duration-500  ">
+          <h4 class="product-brand text-sm text-[#757575] ">
+            Hasan barati Maleki hoh Q
+          </h4>
+          <h3 class="text-lg"> 
+        Cross Stripes & Stone Bracelet
+          </h3>
+
+          <p class="text-lg">$169.00</p>
+          <button class="bg-black text-white p-3 
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover/hasan:opacity-100 duration-500">Random add to</button>
+          
+        </div>
+      </div>
+       
+    </swiper-slide>
+
+
+
+        <swiper-slide class="releative group/hasan">
+      <div class="product-frame   p-2 hover:bg-white group   relative">
+        <div class="image-frame relative">
+        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover/hasan:opacity-0  duration-700">
+        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover/hasan:opacity-100 duration-700 absolute top-0 left-0
+        ">
+
+        
+        </div>
+
+        <div class="info-product py-4  bg-white
+        flex flex-col gap-1 duration-500  ">
+          <h4 class="product-brand text-sm text-[#757575] ">
+            Hasan barati Maleki hoh Q
+          </h4>
+          <h3 class="text-lg"> 
+        Cross Stripes & Stone Bracelet
+          </h3>
+
+          <p class="text-lg">$169.00</p>
+          <button class="bg-black text-white p-3 
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover/hasan:opacity-100 duration-500">Random add to</button>
+          
+        </div>
+      </div>
+       
+    </swiper-slide>
+
+
+        <swiper-slide class="releative group/hasan">
+      <div class="product-frame bg-gray-600 p-3 hover:bg-white    ">
+        <div class="image-frame relative">
+        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover/hasan:opacity-0  duration-700">
+        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover/hasan:opacity-100 duration-700 absolute top-0 left-0
+        ">
+
+        
+        </div>
+
+        <div class="info-product py-4  bg-white
+        flex flex-col gap-1 duration-500  ">
+          <h4 class="product-brand text-sm text-[#757575] ">
+            Hasan barati Maleki hoh Q
+          </h4>
+          <h3 class="text-lg"> 
+        Cross Stripes & Stone Bracelet
+          </h3>
+
+          <p class="text-lg">$169.00</p>
+          <button class="bg-black text-white p-3 
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover/hasan:opacity-100 duration-500">Random add to</button>
+          
+        </div>
+      </div>
+       
+    </swiper-slide>
+
+    
+
+
+  </swiper>
+      </div>
+
+            <div class="new_arrivals_products flex items-center justify-center
+       bg-violet-7002 absolute w-full top-[7.6rem]  "  
+     :class="selectedButton === 'featured' ? 'appearList' : 'disappearList'"
+
+      >
+                    <swiper
+    :modules="modules"
+    :slides-per-view="4"
+    :space-between="50"
+    class="cursor-pointer container  bg-white border-x-4 border-black"
+  > 
+
+       <swiper-slide class="releative group/hasan"  >
+      <div class="product-frame bg-gray-600 p-3 hover:bg-white    "   >
+        <div class="image-frame relative w-full h-full"  >
+        <img src="../../../assets/featured_products/best_seller/product-2.webp" alt="" class="group-hover/hasan:opacity-0  duration-700">
+        <img src="../../../assets/featured_products/best_seller/back_product-2.webp" alt="" class=" opacity-0 group-hover/hasan:opacity-100 duration-700 absolute top-0 left-0
+        "
+        >
+        </div>
+
+        <div class="info-product py-4  
+        flex flex-col gap-1 duration-500  " 
+        >
+          <h4 class="product-brand text-sm text-[#757575] " >
+            Amo Hasan
+          </h4>
+          <h3 class="text-lg"> 
+        Cross Stripes & Stone Bracelet
+          </h3>
+
+          <p class="text-lg">$169.00</p>
+          <button class="bg-black text-white p-3 
+          rounded-sm w-[130px] mt-2 opacity-0 group-hover/hasan:opacity-100 duration-500">Random add to</button>
           
         </div>
       </div>
@@ -184,17 +303,6 @@
 </template>
 
 <script setup>
-
-const toggleHeart = ref('ion:heart-outline')
-const toggleMyHeart = () => {
-  toggleHeart.value = toggleHeart.value === 'ion:heart-outline' ? 'ion:heart' : 'ion:heart-outline'
-  alert('hello')
-}
-
-
-
-
-
 import { ref } from 'vue';
 import { useFeatureProducts } from '../../../stores/stores'
 
@@ -217,6 +325,8 @@ const fetchingData = async function() {
   });
  });
 
+
+
 const FeatureProducts = useFeatureProducts()
 
 
@@ -233,6 +343,17 @@ fetchingData()
 
 const selectedButton = ref('new-arrivals');
 
+
+ const toggleHeart = ref('ion:heart-outline')
+const toggleMyHeart = () => {
+
+    toggleHeart.value = toggleHeart.value === 'ion:heart-outline' ? 'ion:heart' : 'ion:heart-outline'
+
+}
+
+const myAlert = () => {
+  alert('alerted')
+}
 
 </script>
 
@@ -274,9 +395,6 @@ const selectedButton = ref('new-arrivals');
   opacity: 0;
 }
 
- img {
-  pointer-events: none;
-}
 
 .new_arrivals_products, .featured_products {
   z-index: 1; /* add z-index */
@@ -320,6 +438,20 @@ const selectedButton = ref('new-arrivals');
     /* box-shadow: -3px -5px 46px -10px rgba(0,0,0,0.75); */
     opacity: 0;
     transition: all .3s ease-in-out
+    
 }
+
+.add-to-wishlist{
+transition: all 0.5s ease-out !important;
+}
+
+.info-product{
+transition: all 0.4s ease-out !important;
+}
+
+
+
+
+
 
 </style>

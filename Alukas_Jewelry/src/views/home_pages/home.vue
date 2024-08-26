@@ -10,6 +10,7 @@ import Home_journal from './home_journal/home_journal.vue';
 import Home_testimonial_customers from './home_testimonial_customers/home_testimonial_customers.vue';
 import Home_brands from './home_brands/home_brands.vue';
 import Home_social_media from './home_social_media/home_social_media.vue';
+import Test from './test.vue';
 
 
 </script>
@@ -35,6 +36,7 @@ import Home_social_media from './home_social_media/home_social_media.vue';
         <Home_testimonial_customers/>
         <Home_brands/>
         <Home_social_media/>
+        <Test/>
         
     </RouterView>
     <!-- <div class="h-[40vh] w-full bg-green-600"></div> -->
