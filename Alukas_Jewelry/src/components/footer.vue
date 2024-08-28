@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-info container flex flex-col gap-12 ">
+    <div class="footer-info container px-0 flex flex-col gap-12 ">
         <div class="footers-menu flex items-start justify-between flex-wrap   mt-14 ">
       <!-- Shop Highlights -->
        <div class="shop-highlights">

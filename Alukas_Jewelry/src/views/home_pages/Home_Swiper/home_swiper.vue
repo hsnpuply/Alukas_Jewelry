@@ -9,13 +9,31 @@
     class=" container  "
   > 
     <swiper-slide class="releative ">
-        <img :src="atwo" alt="" class="min-w-[1400px] h-[500px] lg:w-full lg:h-[60vh] object-cover" >
-        <p class="absolute top-0 left-0 p-1 bg-black text-white" ref="nigger">Some Random Ite1 ...</p>
-    </swiper-slide>
+        <img :src="atwo" alt="" class=".wiper-moves min-w-[1204px] h-[600px] lg:w-full lg:h-[60vh] object-cover" >
+        <div class="swiper-text absolute top-[3rem] left-28 p-1 text-lg" ref="text1">
+          <h2 class="swiper-header      text-[50px] leading-[3.4rem] text-white"
+           ref="swiper_header">
+            Personalize <br>
+            your choker.
+          </h2>
+          <p class="text-[#aaaaaa] text-2xl pt-5">Create a custom ring as unique as your love.</p>
+
+          <button class="bg-white px-10 py-[.64rem] text-black text-xl mt-8">Shop Now</button>
+        </div>
+      </swiper-slide>
     <swiper-slide class="releative">
-        <img :src="atwo2" alt="" class="w-[500px] h-[500px] lg:w-full lg:h-[60vh] object-scale-down" >
-        <p class="absolute top-0 left-0 p-1 bg-black text-white" ref="nigger">Some Random Item ...</p>
+        <img :src="atwo2" alt="" class="min-w-[1234px] h-[600px lg:w-full lg:h-[60vh] object-cover" >
+        <div class="swiper-text absolute top-[3rem] left-28 p-1 text-lg" ref="text2">
+          <h2 class=" text-[50px] leading-[3.4rem] text-white" ref="swiper_header">
+            Grace Designer <br>
+            Collection
+</h2>
+          <p class="text-[#aaaaaa] text-2xl pt-5">A symbol of love and a modern take on gold.</p>
+
+          <button class="bg-white px-10 py-[.64rem] text-black text-xl mt-8">Shop Now</button>
+        </div>
     </swiper-slide>
+
   </swiper>
   </div>
 </template>
@@ -24,41 +42,61 @@
 import { ref } from 'vue';
 // import Swiper core and required modules
   import atwo from '../../../assets/home-grid-showcase-slider-1-1.webp'
-  import atwo2 from '../../../assets/2_84c973d9-47c0-484c-9962-7b6e95370227.webp'
+  import atwo2 from '../../../assets/home-grid-2.webp'
 
 const screenWidth = ref(window.innerWidth)
-
-  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
   // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
-// const nigger=ref('')
-//       const onSwiper = (swiper) => {
-//         nigger.value.classList.add('bg-red-800', 'p-5','bounce');
-//       };
-//       const onSlideChange = () => {
+  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-//           nigger.value.classList.add('bg-red-800', 'p-5', 'bounce');
-//   setTimeout(() => {
-//     nigger.value.classList.remove('bounce');
-//   },100); // remove bounce class after 1 second
 
-//       };
+
+const text1 = ref(null)
+const text2 = ref(null)
+const swiper_header = ref(null)
+
+const onSwiper = () => {
+    text1.value.classList.add('swiper-moves')
+
+}
+const onSlideChange = (swiper) => {
+  
+  const currentSlideIndex = swiper.activeIndex
+  
+  const currentText = [text1, text2][currentSlideIndex]
+
+  // Hide all texts
+  text1.value.classList.remove('swiper-moves')
+  text2.value.classList.remove('swiper-moves')
+  // Show current text
+  setTimeout(() => {
+    currentText.value.classList.add('swiper-moves')
+    // alert(swiper_header.value)
+    swiper_header.value.classList.add('swiper-header-move')
+
+  }, 100)
+}
 </script>
 <style scoped>
-@keyframes bounce {
-  0%, 100% {
-    transform: scale(1) skew(365deg);
-  }
-  50% {
-    transform: scale(1.2) skew(100deg);
-  }
-  75% {
-    transform: scale(.8) skew(0deg);
-  }
+
+.swiper-text{
+  top:4rem;
+  opacity: 0;
+  transition: all 1s ease-in-out
 }
-.bounce {
-  animation: bounce 4s infinite;
+
+.swiper-moves{
+  opacity: 1;
+  top:8rem;
+}
+
+@keyframes swiper_appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 </style>
