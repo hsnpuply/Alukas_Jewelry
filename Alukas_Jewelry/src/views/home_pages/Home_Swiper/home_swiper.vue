@@ -6,11 +6,14 @@
     :space-between="50"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
-    class=" container  "
+    class=" container home_swiper max-w-[1400px] "
+    navigation
   > 
+
     <swiper-slide class="releative ">
-        <img :src="atwo" alt="" class=".wiper-moves min-w-[1204px] h-[600px] lg:w-full lg:h-[60vh] object-cover" >
-        <div class="swiper-text absolute top-[3rem] left-28 p-1 text-lg" ref="text1">
+        <img :src="atwo" alt="" class="wiper-moves min-w-[1204px]
+         h-[600px] lg:w-full lg:h-[60vh] object-cover" >
+        <div class="swiper-text absolute top-[3rem] left-10 md:left-28 p-1 text-lg" ref="text1">
           <h2 class="swiper-header      text-[50px] leading-[3.4rem] text-white"
            ref="swiper_header">
             Personalize <br>
@@ -22,8 +25,8 @@
         </div>
       </swiper-slide>
     <swiper-slide class="releative">
-        <img :src="atwo2" alt="" class="min-w-[1234px] h-[600px lg:w-full lg:h-[60vh] object-cover" >
-        <div class="swiper-text absolute top-[3rem] left-28 p-1 text-lg" ref="text2">
+        <img :src="atwo2" alt="" class="min-w-[1234px] h-[600px] lg:w-full lg:h-[60vh] object-cover" >
+              <div class="swiper-text absolute top-[3rem] left-10 md:left-28 p-1 text-lg" ref="text2">
           <h2 class=" text-[50px] leading-[3.4rem] text-white" ref="swiper_header">
             Grace Designer <br>
             Collection
@@ -32,6 +35,7 @@
 
           <button class="bg-white px-10 py-[.64rem] text-black text-xl mt-8">Shop Now</button>
         </div>
+
     </swiper-slide>
 
   </swiper>
@@ -40,6 +44,8 @@
 
 <script setup>
 import { ref } from 'vue';
+  import { Mousewheel } from 'swiper/modules';
+
 // import Swiper core and required modules
   import atwo from '../../../assets/home-grid-showcase-slider-1-1.webp'
   import atwo2 from '../../../assets/home-grid-2.webp'
@@ -50,6 +56,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
   import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
+  const modules = [Navigation, Pagination, Scrollbar, A11y, Mousewheel] // Add Mousewheel to the modules array
 
 
 const text1 = ref(null)
@@ -99,4 +106,45 @@ const onSlideChange = (swiper) => {
     opacity: 1;
   }
 }
+
+
+</style>
+
+<style>
+.swiper-button-prev, .swiper-button-next{
+  color:white !important;
+  opacity: 0;
+  transition: all .4s ease-out;
+}
+
+.swiper-button-disabled{
+  opacity: 0 !important;
+  transition: all .4s ease-out !important;
+}
+
+.home_swiper:hover .swiper-button-disabled{
+  opacity: .35 !important;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+.swiper-button-next {
+  right: 30px;
+}
+.home_swiper:hover .swiper-button-prev{
+  left: 20px !important;
+  opacity: 1;
+}
+.home_swiper:hover .swiper-button-next{
+  right: 20px !important;
+  opacity: 1;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+  background-color: red !important;
+}
+
+
 </style>
