@@ -1,84 +1,96 @@
 <template >
-  <section class=" w-full  py-4 px-2 sm:px-2  ">
-    <!-- grid-cols-[repeat(4,.5fr)] grid-rows-[repeat(6,.414fr)] -->
-     <!-- grid-cols-1 grid-rows-1 -->
-    <div class="grid_show-case grid gap-6  md:!grid-rows-[repeat(6,.414fr)] md:!grid-cols-[repeat(4,.5fr)]
-       container px-0   text-center">
+  <section class="  py-4 px-2 sm:px-2  ">
+
+        <!-- Grid Show Case Section [ Showing Jewelry in Grid ] -->
+    <div class="grid_show-case grid gap-6
+      md:!grid-rows-[repeat(6,.414fr)] md:!grid-cols-[repeat(4,.5fr)]
+       container px-0   text-center" >
+
+
       <!-- item1  -->
-      <div class="item1   text-white text-2xl overflow-hidden relative ">
-        <a href="#" class="group">
-          <img :src="Pic1" alt="" class="w-full group-hover:scale-110 duration-300 h-full object-cover ">
+      <div class="item1  items ">
+        <div  class="group cursor-pointer">
+          <img :src="Pic1" alt=""
+           class="gridShowCase_img ">
         <div class="w-full pb-12 pic-info absolute -bottom-8 sm:-bottom-0 lg:bottom-0 left-[50%] -translate-x-1/2  text-black flex flex-col justify-between items-center gap-4">
-          <h4 class="uppercase font-light md:text-lg text-base">Fashion SS 2024</h4>
+          <h4 class="gridShowCase-title md:text-lg">Fashion SS 2024</h4>
           <h1 class="text-4xl">New Earring Arrival</h1>
-          <a href="#" class="uppercase  text-base shop_now relative overflow-hidden">
+          <a href="#" class=" shop_now gridShowCase-button">
             Shop Now
           </a>
         </div>
-        </a>
+        </div>
+      </div>
 
 
         <!-- item 2 -->
-       </div>
-      <div class="item2    border-black  text-white text-2xl overflow-hidden  relative">
-        <a href="#" class="group">
-        <img :src="Pic2" alt="" class="w-full group-hover:scale-110  hover:scale-110 duration-300 h-full object-cover ">
+      <div class="item2 items">
+        <div  class="group cursor-pointer">
+        <img :src="Pic2" alt=""
+         class="w-full group-hover:scale-110  duration-300 h-full object-cover ">
           <div class=" pb-12 pic-info absolute top-10 left-24 sm:left-[7.5rem] lg:left-32 -translate-x-1/2
-            text-black flex flex-col justify-between items-start gap-5">
+            text-black flex-col-jbtw-istart gap-5">
           <h1 class="text-2xl text-left">Diamond Boxset <br> Bracelets</h1>
-          <a href="#" class="uppercase  text-base shop_now relative overflow-hidden ">Shop Now</a>
+          <a href="#" class=" shop_now gridShowCase-button">Shop Now</a>
         </div>
-        </a>
-
       </div>
-      <div class="item3   text-white text-2xl overflow-hidden relative max-h-[400px]">
-        <a href="#" class="group">
-          <img :src="Pic3" alt="" class="w-full hover:scale-110 duration-300 h-full object-cover">
+
+      <!-- item 3 -->
+      </div>
+      <div class="item3   items max-h-[400px]">
+        <div  class="group cursor-pointer">
+          <img :src="Pic3" alt="" class="gridShowCase_img">
             <div class=" pb-12 pic-info absolute top-10 left-32 -translate-x-1/2
-            text-black flex flex-col justify-between items-start gap-5">
+            text-black flex-col-jbtw-istart gap-5">
           <h1 class="text-2xl text-left">Trendy Pendants <br> Collection</h1>
-          <a href="#" class="uppercase  text-base shop_now relative overflow-hidden ">Shop Now</a>
+          <a href="#" class=" shop_now gridShowCase-button">Shop Now</a>
         </div>
-        </a>
       </div>
-      <div class="item4   text-black text-2xl overflow-hidden relative max-h-[400px]">
-      <a href="#" class="group">
-        <img :src="Pic4" alt="" class="w-full hover:scale-110 duration-300 h-full object-cover">
+      </div>
+
+      <!-- item 4 -->
+      <div class="item4  items max-h-[400px]">
+        <div  class="group cursor-pointer">
+        <img :src="Pic4" alt="" class="gridShowCase_img">
             <div class=" pb-12 pic-info absolute top-10 left-32 -translate-x-1/2
-            text-black flex flex-col justify-between items-start gap-5">
+            text-black flex-col-jbtw-istart gap-5">
           <h1 class="text-2xl text-left">Engagment Rings!</h1>
-          <a href="#" class="uppercase  text-base shop_now relative overflow-hidden ">Shop Now</a>
+          <a href="#" class=" shop_now gridShowCase-button">Shop Now</a>
         </div>
-      </a>
       </div>
-      <div class="item5   text-white text-2xl overflow-hidden relative">
-        <a href="#" class="group">
-          <img :src="Pic5" alt="" class="w-full hover:scale-110 duration-300 h-full object-cover">
-     <div class=" pb-12 pic-info absolute bottom-[2.78rem] left-[10.5rem] -translate-x-1/2 
-      text-black flex flex-col justify-between items-start gap-4">
-          <h4 class="uppercase font-light text-base">New Collection</h4>
+      </div>
+
+      <!-- item 5 -->
+      <div class="item5   items">
+        <div  class="group cursor-pointer">
+          <img :src="Pic5" alt="" class="gridShowCase_img">
+     <div class=" pb-12 pic-info absolute bottom-20 left-[10.5rem] -translate-x-1/2 
+      text-black flex-col-jbtw-istart gap-4">
+          <h4 class="gridShowCase-title">New Collection</h4>
           <h1 class="text-3xl text-start">Modern Necklaces <br>Collection</h1>
-          <a href="#" class="uppercase  text-base shop_now relative overflow-hidden
+          <a href="#" class=" shop_now gridShowCase-button
 
             ">
             Shop Now
           </a>
         </div>
-        </a>
       </div>
-      <div class="item6   text-white text-2xl overflow-hidden relative">
-        <a href="#" class="group">
-          <img :src="Pic6" alt="" class="w-full hover:scale-110 duration-300 h-full object-cover">
-     <div class=" pb-12 pic-info absolute bottom-0 left-[8.5rem] -translate-x-1/2  text-black flex flex-col justify-between items-start gap-4">
-          <h4 class="uppercase font-light text-base">Flat Discount</h4>
+      </div>
+
+      <!-- item 6 -->
+      <div class="item6   items">
+        <div  class="group cursor-pointer">
+          <img :src="Pic6" alt="" class="gridShowCase_img">
+     <div class=" pb-12 pic-info absolute bottom-20 left-[8.5rem] -translate-x-1/2  text-black flex-col-jbtw-istart gap-4">
+          <h4 class="gridShowCase-title">Flat Discount</h4>
           <h1 class="text-3xl text-start">Shop Diamond <br>Ring</h1>
-          <a href="#" class="uppercase  text-base shop_now relative overflow-hidden
+          <a href="#" class=" shop_now gridShowCase-button
 
             ">
             Shop Now
           </a>
         </div>
-        </a>
+      </div>
       </div>
 
 
@@ -190,12 +202,13 @@ section{
 
 </style>
 <script setup>
-import Pic1 from '../../../assets/grid_show-case/show_case_1.webp';
-import Pic2 from '../../../assets/grid_show-case/show_case_2.webp';
-import Pic3 from '../../../assets/grid_show-case/show_case_3.webp';
-import Pic4 from '../../../assets/grid_show-case/show_case_4.webp';
-import Pic5 from '../../../assets/grid_show-case/show_case_5.webp';
-import Pic6 from '../../../assets/grid_show-case/show_case_6.webp';
+import Pic1 from '@/assets/grid_show-case/show_case_1.webp';
+import Pic2 from '@/assets/grid_show-case/show_case_2.webp';
+import Pic3 from '@/assets/grid_show-case/show_case_3.webp';
+import Pic4 from '@/assets/grid_show-case/show_case_4.webp';
+import Pic5 from '@/assets/grid_show-case/show_case_5.webp';
+import Pic6 from '@/assets/grid_show-case/show_case_6.webp';
+
 
 
 

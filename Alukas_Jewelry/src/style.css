@@ -20,6 +20,12 @@
 
 
 @layer components {
+
+  .flex-col-jbtw-istart{
+    @apply flex flex-col justify-between items-start
+
+  }
+
   .ul_mobile_nav  li   {
     @apply w-full relative p-2 
   }
@@ -66,6 +72,23 @@
 .disappearList{
   @apply opacity-0 duration-500 translate-y-10 hidden
 }
+
+/* Grid Show Case */
+.items{
+  @apply   overflow-hidden relative
+}
+.gridShowCase_img{
+  @apply w-full group-hover:scale-110 duration-300 h-full object-cover
+
+}
+.gridShowCase-title{
+  @apply uppercase font-light text-base
+}
+.gridShowCase-button{
+  @apply uppercase  text-base relative overflow-hidden
+
+}
+/* Grid Show Case */
 
 }
 
