@@ -1,4 +1,8 @@
 <template>
+      <div class="flex justify-center bg-black">
+  <img :src="myArx" alt="">
+
+  </div>
   <section class="home_journal-section    container px-0 mb-8" >
     <div class="journal_title text-center pb-8 pt-4">
       <h2 class="text-[40px]  mb-2 text-black text-center">Read Journal</h2>
@@ -98,6 +102,10 @@
 </template>
 
 <script setup>
+import myAr from '../../../../public/images/ar.jpg';
+import myArx from '@/../public/images/ar.jpg';
+
+
 
 </script>
 

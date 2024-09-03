@@ -1,19 +1,19 @@
 <template>
-  <div class=" px-0 container ">
+  <div class=" md:px-0 container  px-2">
       <swiper
     :modules="modules"
     :slides-per-view="1"
     :space-between="50"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
-    class=" container home_swiper max-w-[1400px] "
+    class=" container home_swiper max-w-[1800px]  mb-8 mt-2 "
     navigation
   > 
 
     <swiper-slide class="releative ">
-        <img :src="atwo" alt="" class="wiper-moves min-w-[1204px]
-         h-[600px] lg:w-full lg:h-[60vh] object-cover" >
-        <div class="swiper-text absolute top-[3rem] left-10 md:left-28 p-1 text-lg" ref="text1">
+        <img :src="atwo" alt="" class="wiper-moves min-w-[1304px]
+         h-[600px] lg:w-full lg:h-[70vh] object-cover" >
+        <div class="swiper-text absolute top-[4rem] left-10 md:left-28 p-1 text-lg" ref="text1">
           <h2 class="swiper-header      text-[50px] leading-[3.4rem] text-white"
            ref="swiper_header">
             Personalize <br>
@@ -25,8 +25,8 @@
         </div>
       </swiper-slide>
     <swiper-slide class="releative">
-        <img :src="atwo2" alt="" class="min-w-[1234px] h-[600px] lg:w-full lg:h-[60vh] object-cover" >
-              <div class="swiper-text absolute top-[3rem] left-10 md:left-28 p-1 text-lg" ref="text2">
+        <img :src="atwo2" alt="" class="min-w-[1304px] h-[600px] lg:w-full lg:h-[70vh] object-cover" >
+              <div class="swiper-text absolute top-[4rem] left-10 md:left-28 p-1 text-lg" ref="text2">
           <h2 class=" text-[50px] leading-[3.4rem] text-white" ref="swiper_header">
             Grace Designer <br>
             Collection
@@ -95,7 +95,7 @@ const onSlideChange = (swiper) => {
 
 .swiper-moves{
   opacity: 1;
-  top:8rem;
+  top:11rem;
 }
 
 @keyframes swiper_appear {
