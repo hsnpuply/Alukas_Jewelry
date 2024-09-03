@@ -98,7 +98,7 @@ onMounted(() => {
 });
 
 const myLogo = ref('')
-import MobileMenu from '../components/mobileMenu_Header.vue';
+import MobileMenu from '@/components/header/mobileMenu_Header.vue';
 let mobileNav_activator = ref(true);
 const myMobileMenu = ref('')
 

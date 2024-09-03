@@ -1,8 +1,4 @@
 <template >
-  <div class="flex justify-center bg-black">
-  <img :src="myAr" alt="">
-
-  </div>
   <section class=" w-full  py-4 px-2 sm:px-2  ">
     <!-- grid-cols-[repeat(4,.5fr)] grid-rows-[repeat(6,.414fr)] -->
      <!-- grid-cols-1 grid-rows-1 -->
@@ -200,7 +196,6 @@ import Pic3 from '../../../assets/grid_show-case/show_case_3.webp';
 import Pic4 from '../../../assets/grid_show-case/show_case_4.webp';
 import Pic5 from '../../../assets/grid_show-case/show_case_5.webp';
 import Pic6 from '../../../assets/grid_show-case/show_case_6.webp';
-import myAr from '@/../public/images/ar.jpg';
 
 
 

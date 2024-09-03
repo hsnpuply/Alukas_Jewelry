@@ -102,8 +102,6 @@
 </template>
 
 <script setup>
-import myAr from '../../../../public/images/ar.jpg';
-import myArx from '@/../public/images/ar.jpg';
 
 
 

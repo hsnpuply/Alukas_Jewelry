@@ -1,5 +1,5 @@
 <script setup>
-import Home from '../src/views/home_pages/home.vue';
+import Home from './views/home.vue';
 
 </script>
 

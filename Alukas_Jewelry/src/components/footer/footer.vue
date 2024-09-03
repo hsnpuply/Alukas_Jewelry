@@ -55,7 +55,7 @@
       
     <div class="footer-others flex  items-start justify-between">
       <div class="payments py-1">
-          <img src="../assets/footer/payments.webp" alt="">
+          <img src="@/assets/footer/payments.webp" alt="">
       </div>
       <div class="links_n_copyright flex flex-col items-end gap-8 justify-start">
 
