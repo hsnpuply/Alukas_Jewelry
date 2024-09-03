@@ -167,16 +167,16 @@ img{
 }  
 
 section{
-  background-color: blue !important;
+  /* background-color: blue !important; */
 }
 
 
 }
 
 @media screen and (min-width:1024px) and (max-width:2024px) {
-  section{
+  /* section{
     background-color: violet;
-  }
+  } */
   .item1{
   grid-area: 1 / 1 / 5 /  3;
 }

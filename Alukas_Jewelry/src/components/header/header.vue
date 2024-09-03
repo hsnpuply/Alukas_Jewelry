@@ -1,8 +1,8 @@
 <template>
   <header class=" border-b-1 border-black" >
-    <div class="hidden md:block offer text-center bg-[#d0b4a8] py-3 relative" ref="offer">
+    <div class="hidden sm:block offer text-center bg-[#d0b4a8] py-3 relative" ref="offer">
       <p>FINAL CLEARANCE: <span class="font-semibold">Take 20% off</span> ‘Sale <span class="font-semibold">{{ promo_code }}</span>’</p>
-      <button class="absolute top-[.6rem] right-3 text-2xl" @click="close_offer()">
+      <button class="absolute top-[.6rem] right-3 text-2xl" @click="closeOffer()">
         <Icon icon="entypo:cross" class="text-2xl text-[#494848] hover:text-[#1d1d1d]" />
       </button>
     </div> 
@@ -10,10 +10,11 @@
 
     <MobileMenu ref="myMobileMenu" toggleNav="mobileNav_activator"  />
 
-    <div class="top-header-container lg:border-b-2 py-3 lg:py-7"
+    <div class="top-header-container  lg:border-b-2 py-3 lg:py-7"
     :class="{ scrolled }"
     >
-          <div class="px-3 flex items-center   justify-between w-full bg-white mb-2 xl:container  xl:px-0">
+    <div class="top-header container px-0">
+                <div class="px-3 flex items-center   justify-between w-full bg-white mb-2 xl:container  xl:px-0">
         <div class="flex gap-3">
         <Icon icon="material-symbols-light:menu"  class="lg:hidden text-3xl cursor-pointer" @click="openMobileNav()" />
 
@@ -64,6 +65,8 @@
 
     </div>
     </div>
+
+    </div>
     <!--:class="mobileNav_activator ? 'translate-x-[0%]' : '' "  -->
 
 
@@ -111,7 +114,7 @@ const openMobileNav = () => {
 const offer = ref('') 
 const promo_code = 'Must-Haves' 
 
-const close_offer = () => {
+const closeOffer = () => {
   offer.value.classList.add('!hidden')
 } 
 
