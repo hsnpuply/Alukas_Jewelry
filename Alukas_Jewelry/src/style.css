@@ -21,6 +21,42 @@
 
 @layer components {
 
+  /* Home Swiper */
+  .homeSwiper{
+    @apply container max-w-[1800px]  mb-4 mt-2;
+  }
+
+  .swiper-1,.swiper-2{
+    @apply w-full h-[31rem] lg:h-[38rem] xl:h-[67vh]
+  }
+
+  .swiper-text{
+    @apply md:absolute md:-top-[4rem]   md:left-16 p-1 text-lg
+           flex items-center justify-center flex-col h-full
+          -translate-y-11 md:-translate-y-0 lg:top-0 lg:-translate-y-20 px-2 md:px-0
+  }
+
+  .swiper-header{
+    @apply text-white text-4xl text-center w-full
+               md:text-left  lg:text-5xl lg:leading-[3.4rem]
+  }
+
+  .swiperDesc{
+    @apply text-[#e8e6e6] md:text-title-gray text-center md:text-left text-2xl pt-5
+  }
+
+  .shopButton_container{
+    @apply flex justify-center  md:justify-start  w-full
+  }
+
+  .shopButton{
+    @apply bg-white px-10 py-[.64rem] text-black text-xl mt-8
+  }
+
+
+
+  /* Home Swiper */
+
   .flex-col-jbtw-istart{
     @apply flex flex-col justify-between items-start
 
