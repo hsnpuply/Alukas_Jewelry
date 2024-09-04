@@ -11,7 +11,8 @@ export default {
         center: true,
         padding:'2rem'
       },
-      backgroundImage: {
+      colors: {
+        'title-gray': '#aaaaaa',
       }
     },
   },
