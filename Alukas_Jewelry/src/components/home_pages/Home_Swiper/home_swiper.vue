@@ -1,14 +1,14 @@
 <template>
-  <div class=" 2xl:px-0 container  px-2 bg-red-800 w-full ">
+  <div class=" 2xl:px-0 container  px-2  w-full bg-violet-800 ">
 
     <!-- Swiper Slider Parent Element -->
     <swiper :modules="modules" :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange"
       class=" homeSwiper " navigation>
 
       <!-- Slider Number 1 -->
-      <swiper-slide class="releative">
-        <div class="swiper-1">
-          <div class="swiper-text" ref="text1">
+      <swiper-slide class="releative  ">
+        <div class="swiper-1 w-full">
+          <div class="swiper-text " ref="text1">
             <h2 class="swiper-header
                  
                " ref="swiper_header">
@@ -129,23 +129,24 @@ const onSlideChange = (swiper) => {
 }
 
 .swiper-1 {
-  background-image: url('../../../assets/home-grid-showcase-slider-1-1.webp');
+  /* background-image: url('../../../assets/home-grid-showcase-slider-1-1.webp'); */
+  background: green;
 }
 
 .swiper-2 {
-  background-image: url('../../../assets/home-grid-2.webp');
-
+  /* background-image: url('../../../assets/home-grid-2.webp'); */
+  background: green;
 }
 
 @media screen and (max-width:623px) {
   .swiper-2 {
-    background-image: url('../../../assets/Slider-2-mini-size.webp');
-
+    /* background-image: url('../../../assets/Slider-2-mini-size.webp'); */
+    background: green;
   }
 
   .swiper-1 {
-    background-image: url('../../../assets/Slider-1-mini-size.webp');
-
+    /* background-image: url('../../../assets/Slider-1-mini-size.webp'); */
+    background: green;
   }
 
 
@@ -154,14 +155,14 @@ const onSlideChange = (swiper) => {
 
 @media screen and (min-width:624px) and (max-width:1023px) {
   .swiper-2 {
-    background-image: url('../../../assets/Slider-2-normal-size.webp');
-
+    /* background-image: url('../../../assets/Slider-2-normal-size.webp'); */
+    background: green;
   }
 
 
   .swiper-1 {
-    background-image: url('../../../assets/Slider-1-normal-size.webp');
-
+    /* background-image: url('../../../assets/Slider-1-normal-size.webp'); */
+    background: green;
   }
 
   .swiper-text {
