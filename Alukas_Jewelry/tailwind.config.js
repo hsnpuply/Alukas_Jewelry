@@ -13,6 +13,7 @@ export default {
       },
       colors: {
         'title-gray': '#aaaaaa',
+        'footer-gray' :'#555555'
       }
     },
   },

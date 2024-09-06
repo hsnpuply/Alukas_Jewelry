@@ -59,7 +59,15 @@
 
   .flex-col-jbtw-istart{
     @apply flex flex-col justify-between items-start
+  }
 
+  .flex-istart-jbetween{
+    @apply flex items-start justify-between
+  }
+  
+
+  .flexCol-iStart-jStart{
+    @apply flex flex-col items-start justify-start
   }
 
   .ul_mobile_nav  li   {
@@ -125,6 +133,13 @@
 
 }
 /* Grid Show Case */
+
+
+
+/* Footer */
+.footer-list{
+  @apply flex items-start flex-col gap-3 pt-3 text-base
+}
 
 }
 
