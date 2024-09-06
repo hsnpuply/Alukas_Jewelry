@@ -1,8 +1,8 @@
 <template>
   <section
-    class="home_banner-section container h-[14rem]  w-full md:h-[7.7rem] bg-cover bg-right mb-12 mx-2 sm:mx-auto">
-    <div
-      class="banner-hook flex flex-col md:flex-row items-center justify-center text-[1.625rem] text-white   h-full gap-2 md:gap-0 ">
+    class="home_banner-section container  h-[15rem] 2xl:py-0  w-full md:h-[7.7rem] bg-cover bg-right mb-12 mx-2 sm:mx-auto">
+    <div class="banner-hook flex flex-col  lg:flex-row items-center justify-center
+       text-[1.625rem] text-white    gap-2 md:gap-0 ">
       <span class=" font-semibold md:pr-2">Gold Club </span>
       <p class=" text-center">
         - plus 5% rewards and free shipping
