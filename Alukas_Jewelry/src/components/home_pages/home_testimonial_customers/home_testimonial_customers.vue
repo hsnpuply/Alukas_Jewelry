@@ -20,9 +20,9 @@
               <p class="text-3xl text-center   max-w-2xl ">{{ item.customerDesc }}</p>
             </div>
 
-            <div class="customer-profile flex flex-col items-center gap-3">
-              <img :src="item.customerImg" alt="" class="rounded-full w-24">
-              <span class="text-[#222222] text-base">
+            <div class="customer-profile flex flex-col items-center gap-3 relative ">
+              <img :src="item.customerImg" alt="" class="rounded-full w-24 ">
+              <span class="text-[#222222] text-base lg:text-lg ">
 
                 - {{ item.customerName }}
 

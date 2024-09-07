@@ -7,7 +7,9 @@
 
       <swiper-slide v-for="(item, index) in brands" :key="index" class="p-5">
         <div class="brand-img  relative cursor-pointer flex items-center justify-center ">
-          <img :src="item" alt="Brands" class=" brightness-200 group w-[7rem] h-[1.8rem] lg:w-[6rem] lg:h-[1.5rem]  ">
+          <img :src="item" alt="Brands" class=" brightness-200 group aspect-[1.5] object-contain   ">
+          <!-- w-[7rem] h-[1.8rem]
+           lg:w-[6rem] lg:h-[1.5rem] -->
           <div class="absolute inset-0  bg-gray-500 w-full h-full opacity-30 hover:opacity-0 mask "></div>
         </div>
       </swiper-slide>

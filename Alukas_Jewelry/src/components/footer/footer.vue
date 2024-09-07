@@ -1,11 +1,12 @@
 <template>
-  <footer>
-    <div class="footer-info container px-4  sm:px-0 flex flex-col gap-12 mb-12 md:mb-4  ">
-      <div
-        class="footers-menu flex  flex-col lg:flex-row bg-red-800 items-start justify-between flex-wrap   gap-6 md:gap-0  mt-14 ">
+  <footer class="px-4 ">
+    <div class="footer-info xl:container px-4 lg:px-8   sm:px-0 flex flex-col gap-12 mb-6  lg:mb-5   ">
+      <div class="footers-menu flex  flex-col md:flex-row  items-start justify-between 
+           gap-6 md:gap-x-64 lg:gap-6 flex-wrap lg:flex-nowrap   mt-14 ">
 
         <!-- Shop Highlights -->
-        <div class="shop-highlights   border-b-[1px] md:border-none w-full border-black overflow-hidden">
+        <div class="shop-highlights 
+           border-b-[1px] md:border-none w-full md:w-[30%] lg:w-full  border-black overflow-hidden">
           <div class="title-link flex items-center justify-between cursor-pointer md:cursor-default "
             @click="openList('shopHighlights', 'shopOpeningList')">
             <h3 class="text-[1.45rem] font-semibold lg:font-medium">Shop Highlights</h3>
@@ -17,10 +18,9 @@
           </ul>
         </div>
 
-
-
         <!-- Quick Links -->
-        <div class="quick-links  border-b-[1px] md:border-none w-full border-black overflow-hidden"
+        <div class="quick-links   border-b-[1px] 
+        md:border-none w-full md:w-[30%] lg:w-full border-black overflow-hidden"
           @click="openList('quickLinks', 'quickOpeningList')">
           <div class="title-link cursor-pointer md:cursor-default flex items-center justify-between ">
             <h3 class=" text-[1.45rem] font-semibold lg:font-medium">Quick Links</h3>
@@ -33,7 +33,8 @@
         </div>
 
         <!-- Customer Services -->
-        <div class="customer-services  border-b-[1px] md:border-none w-full border-black overflow-hidden">
+        <div class="customer-services  
+         border-b-[1px] md:border-none w-full md:w-[30%] lg:w-full border-black overflow-hidden">
           <div class="title-link cursor-pointer md:cursor-default flex items-center justify-between"
             @click="openList('customerServices', 'customerOpeningList')">
             <h3 class="text-[1.45rem] font-semibold lg:font-medium">Customer Services</h3>
@@ -46,7 +47,7 @@
           </ul>
         </div>
 
-        <div class="news-letter flex flex-col  w-full   overflow-hidden
+        <div class="news-letter flex flex-col  w-full md:w-[30%] lg:w-full   overflow-hidden
            ">
           <div class="title-link cursor-pointer md:cursor-default flex items-center justify-between   "
             @click="openList('newsLetter', 'newsLetterOpeningList')">
@@ -57,10 +58,11 @@
           <div class="news-letter-content w-full  h-0 md:h-full   duration-500  " ref="newsLetterList">
             <p class="py-7 text-footer-gray">Sign up for our mailing list to get latest Updates and offers.</p>
             <div class="newsletter-form  ">
-              <form action="" class="flex items-center gap-3 w-full">
-                <input type="text" class="border-2 border-black px-4 py-2 w-full  md:w-80 h-14"
+              <form action="" class="flex items-center md:flex-col md:items-start gap-3 w-full xl:flex-row">
+                <input type="text" class="border-2 border-black px-4 py-2 w-[75%] md:w-full   lg:w-full h-14"
                   placeholder="Enter your email...">
-                <button class="uppercase px-8 py-4 bg-black text-white">Subcribe</button>
+                <button class="uppercase px-8 py-4 lg:px-6 
+                   bg-black/95 hover:bg-black duration-100 text-white ">Subcribe</button>
               </form>
             </div>
           </div>
@@ -68,8 +70,8 @@
       </div>
 
 
-      <div class="footer-others flex lg:flex-istart-jbetween flex-col
-          items-center justify-center gap-4 lg:gap-0 overflow-hidden ">
+      <div class="footer-others flex    flex-col
+          items-center justify-center  xl:justify-end xl:items-end gap-4 overflow-hidden ">
         <div class="payments py-1">
           <img src="@/assets/footer/payments.webp" alt="">
         </div>
@@ -79,8 +81,8 @@
             <li v-for="(list, index) in usefulLinks" :key="index">{{ list }}</li>
           </ul>
 
-          <div class="copyright text-center md:text-right w-full  ">
-            <p>Copyright © Alukas all rights reserved. Powered by Blueskytechco. <br>
+          <div class="copyright   w-full  ">
+            <p class="text-center xl:text-right">Copyright © Alukas all rights reserved. Powered by Blueskytechco. <br>
               & Eddited By <span class="text-black font-semibold">Hasan (Puply) Barati</span>
             </p>
           </div>

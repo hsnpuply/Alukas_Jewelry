@@ -24,7 +24,7 @@
                         </span>
                     </div>
 
-                    <div class="blog-info text-center">
+                    <div class="blog-info text-center py-4 ">
                         <div class="author text-[15.5px] ">
                             <span class="my-axe uppercase">Post by <span class="font-medium">{{ item.authur
                                     }}</span></span>
