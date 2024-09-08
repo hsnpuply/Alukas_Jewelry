@@ -1,97 +1,19 @@
 <template>
-  <section class="  py-4 px-2 2xl:px-0  ">
+  <section class="  py-4 px-2 2xl:px-0 h-fit  ">
 
     <!-- Grid Show Case Section [ Showing Jewelry in Grid ] -->
-    <div class="grid_show-case grid gap-6
-      md:!grid-rows-[repeat(6,.414fr)] md:!grid-cols-[repeat(4,.5fr)]
-       container px-0   text-center">
+    <div class="grid_show-case
+       container px-0   text-center w-full">
+      <div class="item1 item text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio
+
+        recusandae quas corporis adipisci culpa expedita aspernatur earum sapiente suscipit aliquid!</div>
+      <div class="item2 item">Lorem ipsum dolor sit amet.</div>
+      <div class="item3 item">Lorem ipsum dolor sit amet.</div>
+      <div class="item4 item">Lorem ipsum dolor sit amet.</div>
+      <div class="item5 item">Lorem ipsum dolor sit amet.</div>
+      <div class="item6 item">Lorem ipsum dolor sit amet.</div>
 
 
-      <!-- item1  -->
-      <div class="item1  items ">
-        <div class="group cursor-pointer">
-          <img :src="Pic1" alt="" class="gridShowCase_img ">
-          <div
-            class="w-full pb-12 pic-info absolute -bottom-8 sm:-bottom-0 lg:bottom-0 left-[50%] -translate-x-1/2  text-black flex flex-col justify-between items-center gap-4">
-            <h4 class="gridShowCase-title md:text-lg">Fashion SS 2024</h4>
-            <h1 class="text-4xl">New Earring Arrival</h1>
-            <a href="#" class=" shop_now gridShowCase-button">
-              Shop Now
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- item 2 -->
-      <div class="item2 items">
-        <div class="group cursor-pointer">
-          <img :src="Pic2" alt="" class="w-full group-hover:scale-110  duration-300 h-full object-cover ">
-          <div class=" pb-12 pic-info absolute top-10 left-24 sm:left-[7.5rem] lg:left-32 -translate-x-1/2
-            text-black flex-col-jbtw-istart gap-5">
-            <h1 class="text-2xl text-left">Diamond Boxset <br> Bracelets</h1>
-            <a href="#" class=" shop_now gridShowCase-button">Shop Now</a>
-          </div>
-        </div>
-
-        <!-- item 3 -->
-      </div>
-      <div class="item3   items max-h-[400px]">
-        <div class="group cursor-pointer">
-          <img :src="Pic3" alt="" class="gridShowCase_img">
-          <div class=" pb-12 pic-info absolute top-10 left-32 -translate-x-1/2
-            text-black flex-col-jbtw-istart gap-5">
-            <h1 class="text-2xl text-left">Trendy Pendants <br> Collection</h1>
-            <a href="#" class=" shop_now gridShowCase-button">Shop Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- item 4 -->
-      <div class="item4  items max-h-[400px]">
-        <div class="group cursor-pointer">
-          <img :src="Pic4" alt="" class="gridShowCase_img">
-          <div class=" pb-12 pic-info absolute top-10 left-32 -translate-x-1/2
-            text-black flex-col-jbtw-istart gap-5">
-            <h1 class="text-2xl text-left">Engagment Rings!</h1>
-            <a href="#" class=" shop_now gridShowCase-button">Shop Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- item 5 -->
-      <div class="item5   items">
-        <div class="group cursor-pointer">
-          <img :src="Pic5" alt="" class="gridShowCase_img">
-          <div class=" pb-12 pic-info absolute bottom-20 left-[10.5rem] -translate-x-1/2 
-      text-black flex-col-jbtw-istart gap-4">
-            <h4 class="gridShowCase-title">New Collection</h4>
-            <h1 class="text-3xl text-start">Modern Necklaces <br>Collection</h1>
-            <a href="#" class=" shop_now gridShowCase-button
-
-            ">
-              Shop Now
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- item 6 -->
-      <div class="item6   items">
-        <div class="group cursor-pointer">
-          <img :src="Pic6" alt="" class="gridShowCase_img">
-          <div
-            class=" pb-12 pic-info absolute bottom-20 left-[8.5rem] -translate-x-1/2  text-black flex-col-jbtw-istart gap-4">
-            <h4 class="gridShowCase-title">Flat Discount</h4>
-            <h1 class="text-3xl text-start">Shop Diamond <br>Ring</h1>
-            <a href="#" class=" shop_now gridShowCase-button
-
-            ">
-              Shop Now
-            </a>
-          </div>
-        </div>
-      </div>
 
 
     </div>
@@ -126,10 +48,81 @@
 }
 
 
-.grid_show-case {
-  /* grid-template-columns: repeat(4,.5fr);
-  grid-template-rows: repeat(6,.414fr);
-   */
+@media screen and (min-width:1024px) {
+  .grid_show-case {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(100px, 1fr));
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1rem;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .grid_show-case {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1rem;
+    background-color: rgb(0, 26, 255);
+  }
+}
+
+
+.item {
+  background-color: rgb(79, 79, 207);
+  border: 2px solid black;
+}
+
+.item1 {
+  background-color: rgb(186, 58, 58);
+  border: 2px solid rgb(55, 55, 220);
+  /* Ghaleb 8 XY */
+  grid-area: 1 / 1 / 5 / 12;
+  /* rowStart / ColStart / rowEnd / ColEnd */
+}
+
+.item2 {
+  background-color: rgb(134, 21, 57);
+  border: 2px solid rgb(55, 55, 220);
+  /* Ghaleb 8 XY */
+  grid-area: 3 / 1 / 4 / 12;
+  /* rowStart / ColStart / rowEnd / ColEnd */
+}
+
+.item3 {
+  background-color: rgb(134, 64, 21);
+  border: 2px solid rgb(220, 55, 212);
+  /* Ghaleb 8 XY */
+  grid-area: 4 / 1 / 7 / 5;
+  /* rowStart / ColStart / rowEnd / ColEnd */
+}
+
+.item4 {
+  background-color: rgb(167, 150, 140);
+  border: 2px solid rgb(220, 127, 55);
+  /* Ghaleb 8 XY */
+  grid-area: 4 / 5 /7 / 9;
+  /* rowStart / ColStart / rowEnd / ColEnd */
+}
+
+
+.item5 {
+  background-color: rgb(29, 28, 27);
+  border: 2px solid rgb(55, 55, 220);
+  color: white;
+  /* Ghaleb 8 XY */
+  grid-area: 7 / 1 / 9 / 5;
+  /* rowStart / ColStart / rowEnd / ColEnd */
+}
+
+.item6 {
+  background-color: rgb(29, 28, 27);
+  border: 2px solid rgb(55, 55, 220);
+  color: white;
+  /* Ghaleb 8 XY */
+  grid-area: 7 / 5 / 9 / 9;
+  /* rowStart / ColStart / rowEnd / ColEnd */
 }
 
 img {
@@ -137,52 +130,89 @@ img {
 }
 
 
-/* 768 - 1023 */
-@media screen and (min-width:768px) and (max-width:1023px) {
+/* 243 - 767 */
+/* @media screen and (min-width:240px) {
+
+
+
   .item1 {
-    grid-area: 1 / 1 / 5 / 5;
+    grid-area: 1 / 1 /1 / 8;
+
   }
 
   .item2 {
-    grid-area: 5 / 1 / 8 / 5;
-    z-index: 222;
+    grid-area: 2 / 1 / 2 / 8;
+
   }
 
 
   .item3 {
-    grid-area: 5 / 1 / 5 / 2.5;
-    /* row start - col start - row end - col end */
-    z-index: 200;
-    padding: 20px;
-    background-color: red;
-    z-index: 4000;
+    grid-area: 3 / 1 / 4 /8;
+
   }
 
   .item4 {
-    grid-area: 3 / 4 / 5 / 4;
+    grid-area: 4 / 1 / 5 / 8;
+
   }
 
   .item5 {
-    grid-area: 5 / 1 / 7 / 3;
+    grid-area: 5 / 1 / 6 / 8;
+
   }
 
   .item6 {
-    grid-area: 5 / 3 / 7 / 5;
+    grid-area: 6/ 1 / 7 / 8;
+
+  }
+} */
+
+/* 243 - 767 */
+
+
+/* 768 - 1023 */
+/* @media screen and (min-width:768px) and (max-width:1023px) {
+  .item1 {
+    grid-area: 1 / 1 / 3 / 8;
   }
 
-  section {
-    /* background-color: blue !important; */
+  .item2 {
+    grid-area: 3 / 1 / 4 / 8;
+    border: 3px double pink;
+    z-index: 100020;
   }
 
 
-}
+  .item3 {
+    grid-area: 4 / 1 / 4 / 3;
+    z-index: 2222;
+  }
+
+  .item4 {
+    grid-area: 4 / 3 / 4 / 8;
+    z-index: 2222;
+  }
+
+  .item5 {
+    grid-area: 5 / 1 / 5 / 3;
+    z-index: 2222;
+    background-color: red;
+  }
+
+  .item6 {
+    grid-area: 5 / 3 / 5 / 8;
+    z-index: 2222;
+    background-color: red;
+  }
+
+} */
 
 @media screen and (min-width:1024px) and (max-width:2024px) {
 
   /* section{
     background-color: violet;
   } */
-  .item1 {
+  /* .item1 {
     grid-area: 1 / 1 / 5 / 3;
   }
 
@@ -205,7 +235,7 @@ img {
 
   .item6 {
     grid-area: 5 / 3 / 7 / 5;
-  }
+  } */
 
 }
 </style>

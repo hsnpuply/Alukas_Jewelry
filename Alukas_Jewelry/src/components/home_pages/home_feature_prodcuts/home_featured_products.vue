@@ -1,5 +1,5 @@
 <template>
-  <section class="feature_products_section   overflow-hidden pb-24 pt-16 px-2 lg:px-0">
+  <section class="feature_products_section h-[45rem]  overflow-hidden pb-24 pt-16 px-2 lg:px-0">
 
     <div class="feature_products pt-4 relative">
       <h2 class="text-4xl text-black text-center">Feature Products</h2>
@@ -26,9 +26,9 @@
 
 
         <div class="new_arrivals_products flex items-center justify-center
-       bg-violet-7002  absolute w-full top-[6rem]  py-5 px-8"
+       bg-violet-7002  absolute w-full top-[6rem]  py-5 lg:px-8"
           :class="selectedButton === 'new-arrivals' ? 'appearList' : 'disappearList' + ' down'">
-          <swiper :modules="modules" :breakpoints="breakpoints" space-between="3%" class="cursor-pointer container   ">
+          <swiper :modules="modules" :breakpoints="breakpoints" space-between="2%" class="cursor-pointer container   ">
 
             <swiper-slide v-for="(item, index) in 4" :key="index">
               <Products />
@@ -134,10 +134,11 @@ const breakpoints = {
     slidesPerView: 2,
 
   },
-  768: {
+  1023: {
     slidesPerView: 3,
   },
-  1044: {
+
+  1244: {
     slidesPerView: 4,
   }
 };
