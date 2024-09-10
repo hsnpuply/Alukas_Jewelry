@@ -201,7 +201,7 @@ const openList = (type, customClass) => {
   }
 
   .newsLetterOpeningList {
-    height: 9.5rem;
+    height: 10rem;
   }
 }
 

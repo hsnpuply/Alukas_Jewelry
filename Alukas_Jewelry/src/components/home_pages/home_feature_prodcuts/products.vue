@@ -21,19 +21,19 @@
                 <Icon icon="ion:heart-outline" class="text-2xl lg:text-3xl" />
             </div>
             <div class="badges absolute left-5 top-4 flex items-start justify-center flex-col gap-2 uppercase">
-                <p class="text-xs bg-red-600 py-1 px-2 rounded-sm text-white ">-34%</p>
-                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white ">NEW</p>
-                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white ">HOT</p>
-                <!-- <div class="bg-gray-500 py-1 px-2 rounded-sm text-white ">sould out</div> -->
+                <p class="text-xs bg-red-600 py-1 px-2 rounded-sm text-white ">{{ OffPercent }}</p>
+                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white ">{{ NEW }}</p>
+                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white ">{{ HOT }}</p>
+                <div class="bg-gray-500 py-1 px-2 rounded-sm text-white ">{{ SouldOut }}</div>
 
             </div>
         </div>
         <!-- group-hover:-translate-y-20 duration-300 -->
         <div class="productInfo py-2 overflow-hidden duration-300 -translate-y-[1.5rem] md:translate-y-0 lg:group-hover:-translate-y-[1.5rem] px-2
           group bg-white lg:bg-transparent group-hover:bg-white ">
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>$164.0</p>
+            <h3>{{ title }}</h3>
+            <p>{{ DESCRIPTION }}</p>
+            <p>${{ Price }}</p>
 
             <div class="addToCart h-20  lg:h-0  lg:group-hover:h-20 lg:translate-y-20
              lg:group-hover:translate-y-0 duration-300">
@@ -56,6 +56,24 @@
 </style>
 
 <script setup>
-import aks1 from '@/assets/featured_products/best_seller/product-5.webp'
-import aks1_back from '@/assets/featured_products/best_seller/back_product-5.webp'
+import { defineProps } from 'vue'
+const props = defineProps({
+    aks1: {
+        require: true
+    },
+    aks1_back: {
+        require: true
+    },
+    OffPercent: {},
+    Hot: {},
+    NEW: {},
+    Subscription: {},
+    SoldOut: {},
+    title: {},
+    DESCRIPTION: {},
+    Price: {},
+
+})
+// import aks1 from '@/assets/featured_products/best_seller/product-5.webp'
+// import aks1_back from '@/assets/featured_products/best_seller/back_product-5.webp'
 </script>

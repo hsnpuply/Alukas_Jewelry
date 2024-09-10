@@ -1,6 +1,6 @@
 <template>
-  <section class="home-testimonial_customers w-full  my-24  ">
-    <div class="container  w-full pt-8 pb-6">
+  <section class="home-testimonial_customers w-full  my-24   ">
+    <div class="container  w-full pt-8 pb-6  ">
 
       <swiper :modules="modules" :slides-per-view="1" :space-between="50" @swiper="onSwiper"
         @slideChange="onSlideChange" class="min-h-[40vh] max-w-[50rem]  cursor-grab   ">
@@ -39,7 +39,7 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 
 
 

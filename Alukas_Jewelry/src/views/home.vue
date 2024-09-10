@@ -11,18 +11,17 @@ import Home_testimonial_customers from '@/components/home_pages/home_testimonial
 import Home_brands from '@/components/home_pages/home_brands/home_brands.vue';
 import Home_social_media from '@/components/home_pages/home_social_media/home_social_media.vue';
 
+const toTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 
 </script>
 <template>
-    <div class="size-of-screen">
-        <div class="fixed bottom-16 right-8 bg-green-800 p-3 rounded-full text-2xl border-4
-             border-white text-white z-[10000000]">
-            <p class="sm:hidden ">Tony</p>
-            <p class="hidden sm:block md:hidden">Small</p>
-            <p class="hidden md:block lg:hidden ">Medium</p>
-            <p class="hidden lg:block xl:hidden  ">Large </p>
-            <p class="hidden xl:block 2xl:hidden">Xl</p>
-            <p class="hidden 2xl:block">2XL</p>
+    <div class="toTheTop">
+        <div
+            class="bg-title-gray text-white z-[10000000] fixed bottom-[5%] right-[4%]  rounded-full p-1 cursor-pointer">
+            <Icon icon="lets-icons:arrow-top" class="text-4xl text-[#222222]" @click="toTop()" />
         </div>
     </div>
     <Header_home />

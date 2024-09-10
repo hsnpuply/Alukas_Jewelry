@@ -1,5 +1,5 @@
 <template>
-  <div class=" 2xl:px-0 container  px-2  w-full bg-violet-800 ">
+  <div class=" 2xl:px-0 container  px-2  w-full  ">
 
     <!-- Swiper Slider Parent Element -->
     <swiper :modules="modules" :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange"
@@ -129,24 +129,22 @@ const onSlideChange = (swiper) => {
 }
 
 .swiper-1 {
-  /* background-image: url('../../../assets/home-grid-showcase-slider-1-1.webp'); */
-  background: green;
+  background-image: url('../../../assets/home-grid-showcase-slider-1-1.webp');
 }
 
 .swiper-2 {
-  /* background-image: url('../../../assets/home-grid-2.webp'); */
-  background: green;
+  background-image: url('../../../assets/home-grid-2.webp');
 }
 
 @media screen and (max-width:623px) {
   .swiper-2 {
-    /* background-image: url('../../../assets/Slider-2-mini-size.webp'); */
-    background: green;
+    background-image: url('../../../assets/Slider-2-mini-size.webp');
+    /* background: green; */
   }
 
   .swiper-1 {
-    /* background-image: url('../../../assets/Slider-1-mini-size.webp'); */
-    background: green;
+    background-image: url('../../../assets/Slider-1-mini-size.webp');
+    /* background: green; */
   }
 
 
@@ -155,14 +153,14 @@ const onSlideChange = (swiper) => {
 
 @media screen and (min-width:624px) and (max-width:1023px) {
   .swiper-2 {
-    /* background-image: url('../../../assets/Slider-2-normal-size.webp'); */
-    background: green;
+    background-image: url('../../../assets/Slider-2-normal-size.webp');
+    /* background: green; */
   }
 
 
   .swiper-1 {
-    /* background-image: url('../../../assets/Slider-1-normal-size.webp'); */
-    background: green;
+    background-image: url('../../../assets/Slider-1-normal-size.webp');
+    /* background: green; */
   }
 
   .swiper-text {
@@ -197,6 +195,8 @@ const onSlideChange = (swiper) => {
     opacity: 1;
     transform: translateY(0px);
   }
+
+  .swiper-1 {}
 
 
 }

@@ -15,7 +15,7 @@
   }
   html{
   font-family: "Jost", sans-serif;
-
+  overflow-x: hidden
   } 
 
 
@@ -122,7 +122,8 @@
   @apply   overflow-hidden relative
 }
 .gridShowCase_img{
-  @apply w-full group-hover:scale-110 duration-300 h-full object-cover
+  @apply  w-full group-hover:scale-110 duration-300
+  /* w-full h-full object-cover */
 }
 .gridShowCase-title{
   @apply uppercase font-light text-base
