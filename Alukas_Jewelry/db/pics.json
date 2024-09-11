@@ -3,83 +3,96 @@
         {
             "id": 1,
             "pic": "../src/assets/featured_products/new_arrivals/product-1.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true,
+            "price":2224
         },
         {
             "id": 2,
             "pic": "../src/assets/featured_products/new_arrivals/product-2.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true,
+            "price":222
         },
         {
             "id": 3,
             "pic": "../src/assets/featured_products/new_arrivals/product-3.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true,
+            "price":222
         },
         {
             "id": 4,
             "pic": "../src/assets/featured_products/new_arrivals/product-4.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 5,
             "pic": "../src/assets/featured_products/new_arrivals/product-5.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
-
-        
         {
             "id": 6,
             "pic": "../src/assets/featured_products/featured/product-1.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 7,
             "pic": "../src/assets/featured_products/featured/product-2.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 8,
             "pic": "../src/assets/featured_products/featured/product-3.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 9,
             "pic": "../src/assets/featured_products/featured/product-4.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 10,
             "pic": "../src/assets/featured_products/featured/product-5.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
-
-        
         {
             "id": 11,
             "pic": "../src/assets/featured_products/best_seller/product-1.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 12,
             "pic": "../src/assets/featured_products/best_seller/product-2.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 13,
             "pic": "../src/assets/featured_products/best_seller/product-3.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 14,
             "pic": "../src/assets/featured_products/best_seller/product-4.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
         {
             "id": 15,
             "pic": "../src/assets/featured_products/best_seller/product-5.webp",
-            "type": "product"
+            "type": "product",
+            "fav": true
         },
-
         
         {
             "id": 16,

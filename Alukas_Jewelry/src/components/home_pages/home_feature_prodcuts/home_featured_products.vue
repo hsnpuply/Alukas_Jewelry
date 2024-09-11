@@ -31,7 +31,7 @@
           <swiper :modules="modules" :breakpoints="breakpoints" space-between="2%" class="cursor-pointer container   ">
 
             <swiper-slide v-for="(item, index) in 4" :key="index">
-              <Products />
+              <Products :my-products="myFeaturedProducts" />
             </swiper-slide>
 
           </swiper>
@@ -42,7 +42,7 @@
           <swiper :modules="modules" :breakpoints="breakpoints" space-between="3%" class="cursor-pointer container  ">
 
             <swiper-slide v-for="(item, index) in 5" :key="index">
-              <Products />
+              <!-- <Products /> -->
             </swiper-slide>
 
 
@@ -54,7 +54,7 @@
           <swiper :modules="modules" :breakpoints="breakpoints" space-between="3%" class=" cursor-pointer container  ">
 
             <swiper-slide v-for="(item, index) in 4" :key="index">
-              <Products />
+              <!-- <Products /> -->
             </swiper-slide>
 
 
@@ -82,6 +82,10 @@
 <script setup>
 import { ref } from 'vue';
 import { useFeatureProducts } from '../../../stores/stores'
+const myFeaturedProducts = useFeatureProducts()
+const mymyFeaturedProducts = myFeaturedProducts.getAsyncProducts();
+
+
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -89,32 +93,32 @@ import Products from './products.vue';
 const AllType_products = ref([]);
 const pictureAddresses = ref([]);
 
-const fetchingData = async function () {
-  const response = await fetch('../../../../db/pics.json');
-  const data = await response.json();
+// const fetchingData = async function () {
+//   const response = await fetch('../../../../db/pics.json');
+//   const data = await response.json();
 
-  AllType_products.value = data;
-  // console.log(AllType_products.value);
-  Object.entries(AllType_products.value).forEach(([key, element]) => {
-    element.forEach(item => {
-      if (item.type === 'back_product') {
-        // console.log(item.pic);
-      }
-    });
-  });
-
-
-
-  const FeatureProducts = useFeatureProducts()
+//   AllType_products.value = data;
+//   // console.log(AllType_products.value);
+//   Object.entries(AllType_products.value).forEach(([key, element]) => {
+//     element.forEach(item => {
+//       if (item.type === 'back_product') {
+//         // console.log(item.pic);
+//       }
+//     });
+//   });
 
 
-  await FeatureProducts.getItems()
 
-  console.log(FeatureProducts.feature_products_items);
+//   const FeatureProducts = useFeatureProducts()
 
-}
 
-fetchingData()
+//   await FeatureProducts.getItems()
+
+//   console.log(FeatureProducts.feature_products_items);
+
+// }
+
+// fetchingData()
 
 
 
