@@ -2,10 +2,10 @@
     <div
         class="bg-transparent hover:bg-white duration-300 group min-w-[235px] md:min-w-[270px] myHasan  px-5 py-4 mx-3 my-4">
         <div class="imgProduct relative h-[250px]  overflow-hidden bg-black/70  w-full  ">
-            <img :src="myProducts" alt="" class="absolute top-0 left-0 group-hover:opacity-0 duration-500
+            <img :src="myProducts.pic" alt="" class="absolute top-0 left-0 group-hover:opacity-0 duration-500
             min-h-[250px] object-cover
             ">
-            <img :src="ProducBckImage" alt="" class="absolute top-0 left-0 opacity-0   duration-500 group-hover:opacity-100
+            <img :src="myProducts.back_pick" alt="" class="absolute top-0 left-0 opacity-0   duration-500 group-hover:opacity-100
             min-h-[250px] object-cover
             ">
 
@@ -21,10 +21,12 @@
                 <Icon icon="ion:heart-outline" class="text-2xl lg:text-3xl" />
             </div>
             <div class="badges absolute left-5 top-4 flex items-start justify-center flex-col gap-2 uppercase">
-                <p class="text-xs bg-red-600 py-1 px-2 rounded-sm text-white ">{{
-                    myProducts }} !</p>
-                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white ">{{ NEW }}</p>
-                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white ">{{ HOT }}</p>
+                <p class="text-xs bg-red-600 py-1 px-2 rounded-sm text-white "> !</p>
+                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white ">{{ myProducts }}</p>
+                <p class="text-xs  bg-cyan-700 py-1 px-2 rounded-sm text-white "
+                    :class="myProducts.hot ? 'h-0 bg-transparent' : ''">
+                    {{ myProducts.hot === true ? 'HOT' : '' }}
+                </p>
                 <div class="bg-gray-500 py-1 px-2 rounded-sm text-white ">{{ SouldOut }}</div>
 
             </div>
@@ -63,28 +65,10 @@ import { useFeatureProducts } from '@/stores/stores';
 import { defineProps } from 'vue'
 
 const featureProducts = useFeatureProducts()
+featureProducts.getAsyncProducts()
 
 defineProps({
     myProducts: Object,
-
-    // ProductImg: {
-    //     require: true
-    // },
-    // ProducBckImage: {
-    //     require: true
-    // },
-    // OffPercent: {},
-    // Hot: {},
-    // NEW: {},
-    // Subscription: {},
-    // SoldOut: {},
-    // title: {},
-    // DESCRIPTION: {},
-    // Price: {},
-    // toggleFavs: {
-    //     require: true
-    // },
-
 })
 
 </script>

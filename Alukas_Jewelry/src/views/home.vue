@@ -10,6 +10,8 @@ import Home_journal from '@/components/home_pages/home_journal/home_journal.vue'
 import Home_testimonial_customers from '@/components/home_pages/home_testimonial_customers/home_testimonial_customers.vue';
 import Home_brands from '@/components/home_pages/home_brands/home_brands.vue';
 import Home_social_media from '@/components/home_pages/home_social_media/home_social_media.vue';
+import Test from '@/components/test.vue';
+
 
 const toTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -31,6 +33,7 @@ const toTop = () => {
             <Home_gridShowCase />
             <Home_featureProdcuts />
             <Home_banner />
+            <Test />
             <Home_journal />
             <Home_testimonial_customers />
             <Home_brands />

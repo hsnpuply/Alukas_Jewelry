@@ -30,8 +30,8 @@
           :class="selectedButton === 'new-arrivals' ? 'appearList' : 'disappearList' + ' down'">
           <swiper :modules="modules" :breakpoints="breakpoints" space-between="2%" class="cursor-pointer container   ">
 
-            <swiper-slide v-for="(item, index) in 4" :key="index">
-              <Products :my-products="myFeaturedProducts" />
+            <swiper-slide v-for="(item, index) in myFeaturedProducts" :key="index">
+              <Products :my-products="item" />
             </swiper-slide>
 
           </swiper>
@@ -83,42 +83,14 @@
 import { ref } from 'vue';
 import { useFeatureProducts } from '../../../stores/stores'
 const myFeaturedProducts = useFeatureProducts()
-const mymyFeaturedProducts = myFeaturedProducts.getAsyncProducts();
 
+myFeaturedProducts.getAsyncProducts()
 
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import Products from './products.vue';
-const AllType_products = ref([]);
-const pictureAddresses = ref([]);
 
-// const fetchingData = async function () {
-//   const response = await fetch('../../../../db/pics.json');
-//   const data = await response.json();
-
-//   AllType_products.value = data;
-//   // console.log(AllType_products.value);
-//   Object.entries(AllType_products.value).forEach(([key, element]) => {
-//     element.forEach(item => {
-//       if (item.type === 'back_product') {
-//         // console.log(item.pic);
-//       }
-//     });
-//   });
-
-
-
-//   const FeatureProducts = useFeatureProducts()
-
-
-//   await FeatureProducts.getItems()
-
-//   console.log(FeatureProducts.feature_products_items);
-
-// }
-
-// fetchingData()
 
 
 
