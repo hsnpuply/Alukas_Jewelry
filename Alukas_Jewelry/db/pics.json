@@ -1,181 +1,244 @@
 {
-    "feature_products": [
-
-        {
-            "id": 1,
-            "pic": "../src/assets/featured_products/new_arrivals/product-1.webp",
-            "back_pick": "../src/assets/featured_products/new_arrivals/back_product-1.webp", 
-            "type": "product",
-            "hot":false,
-            "newItem":false,
-            "soldOut":true,
-            "fav": true,
-            "price":2224
-        },
-        {
-            "id": 2,
-            "pic": "../src/assets/featured_products/new_arrivals/product-2.webp",
-            "back_pick": "../src/assets/featured_products/new_arrivals/back_product-2.webp",
-            "type": "product",
-            "hot":false,
-            "newItem":false,
-            "soldOut":true,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 3,
-            "pic": "../src/assets/featured_products/new_arrivals/product-3.webp",
-            "back_pick": "../src/assets/featured_products/new_arrivals/product-3.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-        },
-        {
-            "id": 4,
-            "pic": "../src/assets/featured_products/new_arrivals/product-4.webp",
-            "back_pick": "../src/assets/featured_products/new_arrivals/back_product-4.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 5,
-            "pic": "../src/assets/featured_products/new_arrivals/product-5.webp",
-            "back_pick": "../src/assets/featured_products/new_arrivals/product-5.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 6,
-            "pic": "../src/assets/featured_products/featured/product-1.webp",
-            "back_pick": "../src/assets/featured_products/featured/product-1.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 7,
-            "pic": "../src/assets/featured_products/featured/product-2.webp",
-            "back_pick": "../src/assets/featured_products/featured/back_product-2.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 8,
-            "pic": "../src/assets/featured_products/featured/product-3.webp",
-            "back_pick": "../src/assets/featured_products/featured/back_product-3.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 9,
-            "pic": "../src/assets/featured_products/featured/product-4.webp",
-            "back_pick": "../src/assets/featured_products/featured/back_product-4.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 10,
-            "pic": "../src/assets/featured_products/featured/product-5.webp",
-            "back_pick": "../src/assets/featured_products/featured/back_product-5.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 11,
-            "pic": "../src/assets/featured_products/best_seller/product-1.webp",
-            "back_pick": "../src/assets/featured_products/best_seller/back_product-1.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 12,
-            "pic": "../src/assets/featured_products/best_seller/product-2.webp",
-            "back_pick": "../src/assets/featured_products/best_seller/back_product-2.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 13,
-            "pic": "../src/assets/featured_products/best_seller/product-3.webp",
-            "back_pick": "../src/assets/featured_products/best_seller/product-3.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 14,
-            "pic": "../src/assets/featured_products/best_seller/product-4.webp",
-            "back_pick": "../src/assets/featured_products/best_seller/back_product-4.webp",
-            "type": "product",
-            "fav": true,
-            "price":2224
-
-        },
-        {
-            "id": 15,
-            "pic": "../src/assets/featured_products/best_seller/product-5.webp",
-            "back_pick": "../src/assets/featured_products/best_seller/back_product-5.webp",
-            "type": "product",
-            "hot":true,
-            "newItem":true,
-            "soldOut":false,
-            "fav": true,
-            "price":2224
-
-        }
-        
-    ]
+  "feature_products": [
+    {
+      "id": "1",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/new_arrivals/product-1.webp",
+      "back_pick": "../src/assets/featured_products/new_arrivals/back_product-1.webp",
+      "type": "product",
+      "hot": false,
+      "newItem": false,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "new_arrivals",
+      "brand": "Daniele Fiesoli",
+      "description": "Cross Stripes & Stone Bracelet"
+    },
+    {
+      "id": "2",
+      "subscription": false,
+      "offPercentage": 34,
+      "pic": "../src/assets/featured_products/new_arrivals/product-2.webp",
+      "back_pick": "../src/assets/featured_products/new_arrivals/back_product-2.webp",
+      "type": "product",
+      "hot": false,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "new_arrivals",
+      "brand": "BAULBEAR",
+      "description": "Kalvesna Diamond Two Ring"
+    },
+    {
+      "id": "3",
+      "subscription": false,
+      "offPercentage": 15,
+      "pic": "../src/assets/featured_products/new_arrivals/product-3.webp",
+      "back_pick": "../src/assets/featured_products/new_arrivals/product-3.webp",
+      "type": "product",
+      "hot": false,
+      "newItem": false,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "new_arrivals",
+      "brand": "adrianna papell",
+      "description": "Birds Of Paradise Pendant"
+    },
+    {
+      "id": "4",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/new_arrivals/product-4.webp",
+      "back_pick": "../src/assets/featured_products/new_arrivals/back_product-4.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": false,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "new_arrivals",
+      "brand": "Aglini",
+      "description": "Blue Stripes & Stone Earrings"
+    },
+    {
+      "id": "5",
+      "subscription": true,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/new_arrivals/product-5.webp",
+      "back_pick": "../src/assets/featured_products/new_arrivals/product-5.webp",
+      "type": "product",
+      "hot": false,
+      "newItem": false,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "new_arrivals",
+      "brand": "Alukas",
+      "description": "Circle Of Light Heart Earrings"
+    },
+    {
+      "id": "6",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/featured/product-1.webp",
+      "back_pick": "../src/assets/featured_products/featured/product-1.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "featured_product",
+      "brand": "Champion",
+      "description": "Classic Shine Necklace"
+    },
+    {
+      "id": "7",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/featured/product-2.webp",
+      "back_pick": "../src/assets/featured_products/featured/back_product-2.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "featured_product",
+      "brand": "Alexander MCQueen",
+      "description": "Reflections Gold Rings"
+    },
+    {
+      "id": "8",
+      "subscription": false,
+      "offPercentage": 20,
+      "pic": "../src/assets/featured_products/featured/product-3.webp",
+      "back_pick": "../src/assets/featured_products/featured/back_product-3.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "featured_product",
+      "brand": "Alukas",
+      "description": "Love Both Engagement Ring"
+    },
+    {
+      "id": "9",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/featured/product-4.webp",
+      "back_pick": "../src/assets/featured_products/featured/back_product-4.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "featured_product",
+      "brand": "Aglini",
+      "description": "Echoes Necklace EXtension Piece"
+    },
+    {
+      "id": "10",
+      "subscription": false,
+      "offPercentage": 80,
+      "pic": "../src/assets/featured_products/featured/product-5.webp",
+      "back_pick": "../src/assets/featured_products/featured/back_product-5.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "featured_product",
+      "brand": "Daniele Alessandrini",
+      "description": "Blue Stripes & Stone Earrings"
+    },
+    {
+      "id": "11",
+      "subscription": false,
+      "offPercentage": 12,
+      "pic": "../src/assets/featured_products/best_seller/product-1.webp",
+      "back_pick": "../src/assets/featured_products/best_seller/back_product-1.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "best_seller",
+      "brand": "Aglini",
+      "description": "Blue Stripes & Stone Earrings"
+    },
+    {
+      "id": "12",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/best_seller/product-2.webp",
+      "back_pick": "../src/assets/featured_products/best_seller/back_product-2.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": true,
+      "price": 2224,
+      "section": "best_seller",
+      "brand": "Alukas",
+      "description": "STerling Silver Dangles Earrings"
+    },
+    {
+      "id": "13",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/best_seller/product-3.webp",
+      "back_pick": "../src/assets/featured_products/best_seller/product-3.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": true,
+      "price": 2224,
+      "section": "best_seller",
+      "brand": "Desigiual",
+      "description": "Sparkling Crown Charm Bracelet"
+    },
+    {
+      "id": "14",
+      "subscription": false,
+      "offPercentage": 0,
+      "pic": "../src/assets/featured_products/best_seller/product-4.webp",
+      "back_pick": "../src/assets/featured_products/best_seller/back_product-4.webp",
+      "type": "product",
+      "fav": true,
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "price": 2224,
+      "section": "best_seller",
+      "brand": "Dr. Martenens",
+      "description": "Pandora Flower Stem Earrings"
+    },
+    {
+      "id": "15",
+      "subscription": false,
+      "offPercentage": 10,
+      "pic": "../src/assets/featured_products/best_seller/product-5.webp",
+      "back_pick": "../src/assets/featured_products/best_seller/back_product-5.webp",
+      "type": "product",
+      "hot": true,
+      "newItem": true,
+      "soldOut": false,
+      "fav": false,
+      "price": 2224,
+      "section": "best_seller",
+      "brand": "East Diamond",
+      "description": "Circle Of Light Heart Earrings"
+    }
+  ]
 }

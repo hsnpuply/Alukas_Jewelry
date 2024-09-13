@@ -21,7 +21,10 @@ export const useFeatureProducts = defineStore('featureProducts', {
 
   // Getters Getting datas without manipulate it (filtered)
   getters: {
-    getAllFeatureProducts:(state)=> state.feature_products
+    getAllFeatureProducts:(state)=> state.feature_products,
+    getNewArrivals:(state)=> state.feature_products.filter((t)=> t.section === 'new_arrivals'),
+    getFeatured_products:(state)=> state.feature_products.filter((t)=> t.section === 'featured_product'),
+    getBestSeller:(state)=> state.feature_products.filter((t)=> t.section === 'best_seller'),
   },
 
   // Actions
@@ -32,19 +35,20 @@ export const useFeatureProducts = defineStore('featureProducts', {
       this.feature_products = data;
     },
 
-    //     async toggleFav(id) {
-    //   const the_products = this.feature_products.find((t) => t.id === id)
+      async toggleFav(id) {
+      const myItem = this.feature_products.find((t) => t.id === id)
+      myItem.fav = !myItem.fav
 
-    //   the_products.fav = !the_products.fav
-
-    //   const res = await fetch('http://localhost:3000/feature_products/' + id, {
-    //     method: 'PATCH',
-    //     body: JSON.stringify({ fav: the_products.isFav })
-    //   })
-    //   if (res.error) {
-    //     console.log(res.error)
-    //   }
-    // }
+      const res = await fetch('http://localhost:3000/feature_products/' + id, {
+        method: 'PATCH',
+        body: JSON.stringify({ fav: myItem.fav })
+      })
+      if (res.error) {
+        console.log(res.error)
+      }
+    }
+  
+    
 }
   
 })

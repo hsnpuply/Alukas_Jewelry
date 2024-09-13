@@ -1,5 +1,5 @@
 <template>
-  <section class="feature_products_section h-[45rem]  overflow-hidden pb-24 pt-16 px-2 lg:px-0">
+  <section class="feature_products_section h-[45rem] mb-12  overflow-hidden pb-24 pt-16 px-2 lg:px-0">
 
     <div class="feature_products pt-4 relative">
       <h2 class="text-4xl text-black text-center">Feature Products</h2>
@@ -29,9 +29,8 @@
        bg-violet-7002  absolute w-full top-[6rem]  py-5 lg:px-8"
           :class="selectedButton === 'new-arrivals' ? 'appearList' : 'disappearList' + ' down'">
           <swiper :modules="modules" :breakpoints="breakpoints" space-between="2%" class="cursor-pointer container   ">
-
-            <swiper-slide v-for="(item, index) in myFeaturedProducts" :key="index">
-              <Products :my-products="item" />
+            <swiper-slide v-for="(item, index) in myFeaturedProducts.getNewArrivals" :key="index">
+              <Products :myItems="myFeaturedProducts.getNewArrivals[index]" />
             </swiper-slide>
 
           </swiper>
@@ -40,10 +39,9 @@
         <div class="featured_products flex items-center justify-center
        absolute w-full top-[7.6rem]  " :class="selectedButton === 'featured' ? 'appearList' : 'disappearList'">
           <swiper :modules="modules" :breakpoints="breakpoints" space-between="3%" class="cursor-pointer container  ">
-
-            <swiper-slide v-for="(item, index) in 5" :key="index">
-              <!-- <Products /> -->
-            </swiper-slide>
+            <swiper-slide v-for="(item, index) in myFeaturedProducts.getFeatured_products" :key="index">
+              <Products :myItems="myFeaturedProducts.getFeatured_products[index]" />
+            </swiper-slide>>
 
 
           </swiper>
@@ -53,9 +51,9 @@
        absolute w-full top-[7.6rem]  " :class="selectedButton === 'best-seller' ? 'appearList' : 'disappearList'">
           <swiper :modules="modules" :breakpoints="breakpoints" space-between="3%" class=" cursor-pointer container  ">
 
-            <swiper-slide v-for="(item, index) in 4" :key="index">
-              <!-- <Products /> -->
-            </swiper-slide>
+            <swiper-slide v-for="(item, index) in myFeaturedProducts.getBestSeller" :key="index">
+              <Products :myItems="myFeaturedProducts.getBestSeller[index]" />
+            </swiper-slide>>
 
 
 
