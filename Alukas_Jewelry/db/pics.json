@@ -19,7 +19,7 @@
     {
       "id": "2",
       "subscription": false,
-      "offPercentage": 34,
+      "offPercentage": 20,
       "pic": "../src/assets/featured_products/new_arrivals/product-2.webp",
       "back_pick": "../src/assets/featured_products/new_arrivals/back_product-2.webp",
       "type": "product",
@@ -27,7 +27,7 @@
       "newItem": true,
       "soldOut": false,
       "fav": false,
-      "price": 2224,
+      "price": 1000.00,
       "section": "new_arrivals",
       "brand": "BAULBEAR",
       "description": "Kalvesna Diamond Two Ring"

@@ -52,8 +52,23 @@
           group bg-white lg:bg-transparent group-hover:bg-white ">
                 <h3 class="uppercase text-[#757575] py-1">{{ myItems.brand }}</h3>
                 <p class="py-1 text-lg">{{ myItems.description }}</p>
-                <p class=" text-lg">$ {{ myItems.price }}</p> + with discount is {{ myItems.price *
-                    (myItems.offPercentage / 100).toFixed(2) }}
+                <p class=" text-black">{{ myItems.getDiscountCalculation }} hm</p>
+                <p class=""><span class="discounted"
+                        :class="myItems.offPercentage > 0 ? 'text-lg text-black' : 'hidden'">
+                        ${{ (myItems.price - (myItems.price * myItems.offPercentage / 100)).toFixed(2) }}</span>
+                    <!-- 
+                    <span class="discounted" :class="myItems.offPercentage > 0 ? 'text-lg text-black' : 'hidden'">
+                        ${{ (myItems.price *
+                            (myItems.offPercentage /
+                                100)).toFixed(2) }}</span>
+
+ -->
+
+                    <span
+                        :class="myItems.offPercentage > 0 ? 'line-through text-gray-500 pl-2' : 'text-lg text-black'">${{
+                            (myItems.price).toFixed(2) }}</span>
+                </p>
+
 
                 <div class="addToCart h-20  lg:h-0  lg:group-hover:h-20 lg:translate-y-20
              lg:group-hover:translate-y-0 duration-300">

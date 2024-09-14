@@ -24,7 +24,10 @@ export const useFeatureProducts = defineStore('featureProducts', {
     getAllFeatureProducts:(state)=> state.feature_products,
     getNewArrivals:(state)=> state.feature_products.filter((t)=> t.section === 'new_arrivals'),
     getFeatured_products:(state)=> state.feature_products.filter((t)=> t.section === 'featured_product'),
-    getBestSeller:(state)=> state.feature_products.filter((t)=> t.section === 'best_seller'),
+    getBestSeller: (state) => state.feature_products.filter((t) => t.section === 'best_seller'),
+getDiscountCalculation: (item) => {
+  return (item.price * (item.offPercentage / 100)).toFixed(2)
+}
   },
 
   // Actions
@@ -46,7 +49,7 @@ export const useFeatureProducts = defineStore('featureProducts', {
       if (res.error) {
         console.log(res.error)
       }
-    }
+      }
   
     
 }
