@@ -13,7 +13,11 @@ export default {
       },
       colors: {
         'title-gray': '#aaaaaa',
-        'footer-gray' :'#555555'
+        'footer-gray': '#555555',
+        'Metalic':'#222222'
+      },
+      zIndex: {
+        'max':'9999999999'
       }
     },
   },

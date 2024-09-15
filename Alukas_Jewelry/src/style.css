@@ -21,6 +21,11 @@
 
 @layer components {
 
+  /* arrowup */
+  .arrowUpHome{
+    @apply bg-title-gray text-white z-max fixed bottom-[5%] right-[4%]  rounded-full p-1 cursor-pointer
+  }
+
   /* Home Swiper */
   .homeSwiper{
     @apply container max-w-[1800px]  mb-4 mt-2;

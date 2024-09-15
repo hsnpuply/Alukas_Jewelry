@@ -15,7 +15,7 @@
 
             <!-- Slider Number 1 -->
             <swiper-slide class="releative" v-for="(item, index) in blogs" :key="index">
-                <div class="journalItem">
+                <div class="journalItem group">
                     <div class="imgBlog cursor-pointer  w-full overflow-hidden relative">
                         <img :src="item.postImg" alt="image" class="w-full h-full
                           hover:scale-110 duration-300 max-h-[22rem] lg:max-h-[44rem]">

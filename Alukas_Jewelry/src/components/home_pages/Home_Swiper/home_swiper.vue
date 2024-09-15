@@ -196,7 +196,6 @@ const onSlideChange = (swiper) => {
     transform: translateY(0px);
   }
 
-  .swiper-1 {}
 
 
 }
@@ -218,6 +217,8 @@ const onSlideChange = (swiper) => {
     right: 20px;
   }
 }
+
+
 
 .swiper-button-prev,
 .swiper-button-next {

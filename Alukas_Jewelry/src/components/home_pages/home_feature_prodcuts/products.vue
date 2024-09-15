@@ -1,7 +1,7 @@
 <template>
     <div v-if="myItems">
         <div
-            class="bg-transparent hover:bg-white duration-300 group min-w-[235px] md:min-w-[270px] myProduct  px-5 py-4 mx-3 my-4">
+            class="bg-transparent  hover:bg-white duration-300 group min-w-[235px] md:min-w-[270px] myProduct  px-5 py-4 mx-3 my-4">
             <div class="imgProduct relative h-[250px]  overflow-hidden bg-black/70  w-full  ">
                 <img :src="myItems.pic" alt="" class="absolute top-0 left-0 group-hover:opacity-0 duration-500
             min-h-[250px] object-cover
@@ -52,17 +52,10 @@
           group bg-white lg:bg-transparent group-hover:bg-white ">
                 <h3 class="uppercase text-[#757575] py-1">{{ myItems.brand }}</h3>
                 <p class="py-1 text-lg">{{ myItems.description }}</p>
-                <p class=" text-black">{{ myItems.getDiscountCalculation }} hm</p>
+                <p class=" text-black">{{ myItems.getDiscountCalculation }}</p>
                 <p class=""><span class="discounted"
                         :class="myItems.offPercentage > 0 ? 'text-lg text-black' : 'hidden'">
                         ${{ (myItems.price - (myItems.price * myItems.offPercentage / 100)).toFixed(2) }}</span>
-                    <!-- 
-                    <span class="discounted" :class="myItems.offPercentage > 0 ? 'text-lg text-black' : 'hidden'">
-                        ${{ (myItems.price *
-                            (myItems.offPercentage /
-                                100)).toFixed(2) }}</span>
-
- -->
 
                     <span
                         :class="myItems.offPercentage > 0 ? 'line-through text-gray-500 pl-2' : 'text-lg text-black'">${{
