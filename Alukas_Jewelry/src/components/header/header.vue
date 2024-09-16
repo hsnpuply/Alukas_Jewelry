@@ -21,7 +21,9 @@
 
             <div class="hidden cursor-pointer lg:flex our-location  items-center justify-center gap-2 pr-4">
               <Icon icon="weui:location-outlined" class="text-3xl" />
-              <p class="hidden lg:block text-lg">Our Store</p>
+              <p class="hidden lg:block text-lg">
+                <RouterLink to="/location">Our Store</RouterLink>
+              </p>
             </div>
 
 
@@ -75,7 +77,9 @@
     <!-- Desktop Menu -->
     <div class="desktop-menu  hidden lg:block">
       <ul class="flex gap-12 items-center justify-center py-4 text-xl cursor-pointer">
-        <li>Home</li>
+        <li>
+          <RouterLink to="/">Home</RouterLink>
+        </li>
         <li>Shop</li>
         <li>Product</li>
         <li>Blogs</li>
@@ -88,6 +92,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const scrolled = ref('');
 const handleScroll = () => {
