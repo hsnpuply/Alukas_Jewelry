@@ -1,5 +1,5 @@
 <template>
-  <div class="mobileMenu_nav fixed  duration-[700ms]  w-full sm:w-2/3 lg:hidden md:w-1/2 h-svh bg-white z-[1000]
+  <div class="mobileMenu_nav fixed  duration-[700ms]  w-full sm:w-2/3 lg:hidden md:w-1/2 h-svh bg-white z-max+
   border-r-2 border-black -translate-x-full" ref="mobileMenu_nav">
     <aside class="">
       <nav>
