@@ -5,12 +5,12 @@
         <div class="social-desc">
             <p class="social-id text-[#555555] text-2xl py-1">@bersky</p>
         </div>
-        <div class="social-contents mt-10 p-1 flex ">
+        <div class="social-contents mt-10  flex ">
             <swiper :modules="modules" :breakpoints="breakpoints" @swiper="onSwiper" @slideChange="onSlideChange"
                 class=" socialSwiper " navigation>
                 <swiper-slide class="releative" v-for="(item, index) in social_imgs" :key="index">
                     <div class="social-img relative group overflow-hidden cursor-pointer">
-                        <img :src="item" alt="" class="group-hover:scale-110 duration-300 group w-[330px] h-[320px]">
+                        <img :src="item" alt="" class="group-hover:scale-110 duration-300 group w-[340px] h-[320px]">
                         <Icon icon="hugeicons:instagram" width="50" height="50" style="color: white" class="group-hover:scale-125  absolute top-1/2
                             left-1/2 opacity-0 bg-gray-600  group-hover:opacity-100 -translate-x-[50%] -translate-y-[50%]
                             rounded-full p-3 duration-500" />
