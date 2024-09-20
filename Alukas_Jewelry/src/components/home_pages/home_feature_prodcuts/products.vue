@@ -12,13 +12,13 @@
 
                 <!-- Search And Wishlist -->
                 <div class=" search bg-white rounded-full p-2 absolute right-3 top-4 lg:translate-x-5 lg:opacity-0
-                    group-hover:opacity-100 group-hover:translate-x-0 duration-[400ms]">
+                    group-hover:opacity-100 group-hover:translate-x-0 duration-[400ms]"
+                    :class="myItems.soldOut ? 'hidden' : ''">
                     <Icon icon="mdi-light:magnify" class="text-2xl lg:text-3xl  " />
                 </div>
                 <div class="wishlist  bg-white rounded-full p-2 cursor-pointer
                      absolute right-3 top-[4.5rem] lg:translate-x-5 lg:opacity-0 group-hover:opacity-100  group-hover:translate-x-0 duration-[400ms]"
-                    @click="myFeaturedProducts.toggleFav(myItems.id)">
-                    <!-- <Icon icon="ion:heart-outline" class="text-2xl lg:text-3xl" /> -->
+                    :class="myItems.soldOut ? 'hidden' : ''" @click="myFeaturedProducts.toggleFav(myItems.id)">
                     <Icon :icon="myItems.fav ? 'ion:heart' : 'ion:heart-outline'" class="text-2xl lg:text-3xl" />
                 </div>
                 <div class="badges absolute left-5 top-4 flex items-start justify-center flex-col gap-2 uppercase">

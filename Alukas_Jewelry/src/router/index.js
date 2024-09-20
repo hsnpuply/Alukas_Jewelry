@@ -39,7 +39,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-  document.title = to.meta?.title ?? 'Hasan Shop'
+  document.title = to.meta?.title ?? 'Alukas Shop'
 })
 
 export default router
