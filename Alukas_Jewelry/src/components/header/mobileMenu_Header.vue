@@ -11,7 +11,7 @@
         </div>
         <ul class="ul_mobile_nav group  py-2 container flex items-start  text-xl flex-col gap-6">
           <li v-for="(item, index) in menuMobile" :key="index" class="cursor-pointer hover:font-semibold duration-100 ">
-            {{ item }}
+            <RouterLink :to="item.link">{{ item.name }}</RouterLink>
           </li>
         </ul>
       </nav>
@@ -21,6 +21,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router';
 const props = defineProps({
   toggleNav: Boolean,
 });
@@ -34,7 +35,32 @@ const closeMenu = () => {
 }
 
 const menuMobile = ref([
-  'Home', 'Shop', 'Blogs', 'About us', 'Contact us'
+  /*'Home', 'Shop', 'Blogs', 'About us', 'Contact us'*/
+  {
+    "name": "Home",
+    "link": "/"
+  },
+  {
+    "name": "Shop",
+    "link": "/"
+  },
+  {
+    "name": "Blogs",
+    "link": "/"
+  },
+  {
+    "name": "About us",
+    "link": "/"
+  },
+  {
+    "name": "Our Location",
+    "link": "/location"
+  },
+  {
+    "name": "Contact us",
+    "link": "/"
+  },
+
 ])
 
 </script>
